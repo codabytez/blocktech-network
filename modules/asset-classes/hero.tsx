@@ -1,15 +1,14 @@
 import React from "react";
 
-const ExchangesClearingHero = () => {
+const AssetClassesHero = () => {
   return (
-    <div>
+    <div className="mb-16">
       <div className="bg-black text-white pt-2 pb-2 xl:pt-4 xl:pb-4">
         <div className="px-3 lg:px-24">
           <div className="">
             <div className="text-center">
               <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                Price and physical supply risk management. Guaranteed
-                deliveries.{" "}
+                Why financial participants matter to the commodity markets.{" "}
                 <a
                   href="/oil/midland-wti"
                   className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#71C5E8] hover:text-[#71C5E8] font-bold"
@@ -42,7 +41,7 @@ const ExchangesClearingHero = () => {
           <img
             className="w-full h-[550px] max-h-screen select-none object-cover object-right"
             alt="Dam holding water"
-            src="https://www.ice.com/publicdocs/images/Hero-Economics-1920x550-14.jpg"
+            src="https://www.ice.com/publicdocs/images/Hero-General-1920x550-06.jpg"
           />
           <div className="-mt-20 md:-mt-32 lg:-mt-40 relative z-10">
             <div className="px-3 lg:px-24">
@@ -56,7 +55,7 @@ const ExchangesClearingHero = () => {
                   </div>
                   <div className="">
                     <h3 className="m-0 font-headings border-0 pb-0 font-medium normal-case leading-none print:break-after-avoid text-2xl md:text-4xl">
-                      Uncover opportunities. Transact with precision.
+                      Seize opportunity. Transact with precision.
                     </h3>
                     <div className="mb-6"></div>
                   </div>
@@ -116,4 +115,4 @@ const ExchangesClearingHero = () => {
   );
 };
 
-export default ExchangesClearingHero;
+export default AssetClassesHero;

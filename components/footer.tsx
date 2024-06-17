@@ -478,7 +478,7 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
               <div className="hidden sm:block">
-                © Intercontinental Exchange, Inc.
+                © {new Date().getFullYear()} Intercontinental Exchange, Inc.
               </div>
             </div>
           </footer>

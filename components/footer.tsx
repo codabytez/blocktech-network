@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
   return (
     <div>
       <div className="contents ice">
-        <div className="px-3 lg:px-24 bg-gray-200 pb-10 pt-24">
+        <div className="px-3 lg:px-24 bg-gray pb-10 pt-24">
           <footer>
             <div className="flex flex-col items-center justify-center gap-10 pb-8 sm:flex-row sm:items-start sm:gap-16">
               <a href="/">

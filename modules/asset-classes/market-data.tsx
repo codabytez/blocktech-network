@@ -452,7 +452,7 @@ const MarketData = () => {
         <div className="text-right">
           <a
             href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-secondary hover:text-secondary font-bold"
+            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
           >
             <span>Search All Products</span>
           </a>
@@ -534,7 +534,7 @@ const MarketData = () => {
         <div className="text-right">
           <a
             href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-secondary hover:text-secondary font-bold"
+            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
           >
             <span>Search All Products</span>
           </a>
@@ -615,7 +615,7 @@ const MarketData = () => {
         <div className="text-right">
           <a
             href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-secondary hover:text-secondary font-bold"
+            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
           >
             <span>Search All Products</span>
           </a>
@@ -697,7 +697,7 @@ const MarketData = () => {
         <div className="text-right">
           <a
             href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-secondary hover:text-secondary font-bold"
+            className="inline-flex items-center no-underline hover:underline cursor-pointer text-[#235F73] hover:text-[#235F73] font-bold"
           >
             <span>Search All Products</span>
           </a>
@@ -751,7 +751,7 @@ const MarketData = () => {
         <div className="text-right">
           <a
             href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-secondary hover:text-secondary font-bold"
+            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
           >
             <span>Search All Products</span>
           </a>

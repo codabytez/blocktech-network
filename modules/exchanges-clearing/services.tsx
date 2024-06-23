@@ -84,11 +84,7 @@ const Services: NextPage = () => {
                       </Link>
                     </td>
                     <td className="flex items-center gap-2 flex-wrap">
-                      <Link
-                        href="/credit-derivatives"
-                        className="label"
-                        title="Credit"
-                      >
+                      <Link href="#" className="label">
                         Credit
                       </Link>
                     </td>
@@ -96,7 +92,7 @@ const Services: NextPage = () => {
                   <tr>
                     <td>
                       <Link
-                        href="/clear-europe"
+                        href="#"
                         className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                       >
                         <span>BlockTech Clear Europe</span>
@@ -118,28 +114,16 @@ const Services: NextPage = () => {
                       </Link>
                     </td>
                     <td className="flex items-center gap-2 flex-wrap">
-                      <Link
-                        href="/agriculture"
-                        className="label"
-                        title="Agriculture"
-                      >
+                      <Link href="#" className="label" title="Agriculture">
                         Agriculture
                       </Link>
-                      <Link href="/energy" className="label" title="Energy">
+                      <Link href="#" className="label">
                         Energy
                       </Link>
-                      <Link
-                        href="/single-stock-equity-index"
-                        className="label"
-                        title="Equities"
-                      >
+                      <Link href="#" className="label">
                         Equities
                       </Link>
-                      <Link
-                        href="/interest-rates"
-                        className="label"
-                        title="Interest Rates"
-                      >
+                      <Link href="#" className="label">
                         Interest Rates
                       </Link>
                     </td>
@@ -147,7 +131,7 @@ const Services: NextPage = () => {
                   <tr>
                     <td>
                       <Link
-                        href="/clear-netherlands"
+                        href="#"
                         className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                       >
                         <span>BlockTech Clear Netherlands</span>
@@ -169,11 +153,7 @@ const Services: NextPage = () => {
                       </Link>
                     </td>
                     <td className="flex items-center gap-2 flex-wrap">
-                      <Link
-                        href="/single-stock-equity-index"
-                        className="label"
-                        title="Equities"
-                      >
+                      <Link href="#" className="label">
                         Equities
                       </Link>
                     </td>
@@ -181,7 +161,7 @@ const Services: NextPage = () => {
                   <tr>
                     <td>
                       <Link
-                        href="/ngx"
+                        href="#"
                         className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                       >
                         <span>BlockTech NGX</span>
@@ -203,7 +183,7 @@ const Services: NextPage = () => {
                       </Link>
                     </td>
                     <td className="flex items-center gap-2 flex-wrap">
-                      <Link href="/energy" className="label" title="Energy">
+                      <Link href="#" className="label">
                         Energy
                       </Link>
                     </td>
@@ -211,7 +191,7 @@ const Services: NextPage = () => {
                   <tr>
                     <td>
                       <Link
-                        href="/clear-singapore"
+                        href="#"
                         className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                       >
                         <span>BlockTech Clear Singapore</span>
@@ -233,24 +213,16 @@ const Services: NextPage = () => {
                       </Link>
                     </td>
                     <td className="flex items-center gap-2 flex-wrap">
-                      <Link
-                        href="/products/79696475"
-                        className="label"
-                        title="Digital Assets"
-                      >
+                      <Link href="#" className="label">
                         Digital Assets
                       </Link>
-                      <Link href="/energy" className="label" title="Energy">
+                      <Link href="#" className="label">
                         Energy
                       </Link>
-                      <Link href="/forex" className="label" title="Forex">
+                      <Link href="#" className="label">
                         Forex
                       </Link>
-                      <Link
-                        href="/single-stock-equity-index"
-                        className="label"
-                        title="equity-derivatives"
-                      >
+                      <Link href="#" className="label">
                         Equities
                       </Link>
                     </td>
@@ -258,7 +230,7 @@ const Services: NextPage = () => {
                   <tr>
                     <td>
                       <Link
-                        href="/clear-us"
+                        href="#"
                         className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                       >
                         <span>BlockTech Clear U.S.</span>
@@ -280,31 +252,19 @@ const Services: NextPage = () => {
                       </Link>
                     </td>
                     <td className="flex items-center gap-2 flex-wrap">
-                      <Link
-                        href="/agriculture"
-                        className="label"
-                        title="Agriculture"
-                      >
+                      <Link href="#" className="label">
                         Agriculture
                       </Link>
-                      <Link
-                        href="/equity-derivatives"
-                        className="label"
-                        title="Equity Derivatives"
-                      >
+                      <Link href="#" className="label">
                         Equity Derivatives
                       </Link>
-                      <Link href="/forex" className="label" title="Forex">
+                      <Link href="#" className="label">
                         Forex
                       </Link>
-                      <Link
-                        href="/market-data/indices/mortgage-rate-lock-index-futures"
-                        className="label"
-                        title="Interest Rates"
-                      >
+                      <Link href="#" className="label">
                         Interest Rates
                       </Link>
-                      <Link href="/metals" className="label" title="Metals">
+                      <Link href="#" className="label">
                         Metals
                       </Link>
                     </td>

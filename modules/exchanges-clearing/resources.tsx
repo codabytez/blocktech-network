@@ -1,6 +1,7 @@
-import React from "react";
+import { NextPage } from "next";
+import Link from "next/link";
 
-const Resources = () => {
+const Resources: NextPage = () => {
   return (
     <div className="pb-10 xl:pb-20">
       <div className="-mx-3 lg:-mx-24">
@@ -16,8 +17,8 @@ const Resources = () => {
                 <div className="flex gap-x-4 text-left flex-col md:flex-row">
                   <div className="flex-1">
                     <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                      <a
-                        href="/contact"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -44,11 +45,11 @@ const Resources = () => {
                         <div className="text-[0.75rem] font-light md:text-base">
                           Technical support and training
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                      <a
-                        href="/subscriptions"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -75,11 +76,11 @@ const Resources = () => {
                         <div className="text-[0.75rem] font-light md:text-base">
                           Sign up for newsletters, market news, and more
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                      <a
-                        href="/holiday-hours"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -104,13 +105,13 @@ const Resources = () => {
                           </div>
                         </div>
                         <div className="text-[0.75rem] font-light md:text-base">
-                          When ICE markets are closed
+                          When BlockTech markets are closed
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                      <a
-                        href="/productguide/Search.shtml?tradingHours="
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -137,15 +138,15 @@ const Resources = () => {
                         <div className="text-[0.75rem] font-light md:text-base">
                           Regular trading and support hours
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                      <a
-                        href="/technology/isv"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                          <div className="">ICE APIs</div>
+                          <div className="">BlockTech APIs</div>
                           <div className="flex flex-1 justify-start pl-4">
                             <svg
                               stroke="currentColor"
@@ -168,17 +169,17 @@ const Resources = () => {
                         <div className="text-[0.75rem] font-light md:text-base">
                           Customized algorithmic trading, risk management, STP
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="flex-1">
                     <div className="flex py-2 border-t md:first:border-t-0 border-black">
-                      <a
-                        href="/market-data/desktop-solutions/ice-connect/ice-block"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                          <div className="">ICE Block</div>
+                          <div className="">BlockTech Block</div>
                           <div className="flex flex-1 justify-start pl-4">
                             <svg
                               stroke="currentColor"
@@ -201,15 +202,15 @@ const Resources = () => {
                         <div className="text-[0.75rem] font-light md:text-base">
                           Submit block trades for clearing
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t md:first:border-t-0 border-black">
-                      <a
-                        href="/support/education"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                          <div className="">ICE Education</div>
+                          <div className="">BlockTech Education</div>
                           <div className="flex flex-1 justify-start pl-4">
                             <svg
                               stroke="currentColor"
@@ -232,15 +233,15 @@ const Resources = () => {
                         <div className="text-[0.75rem] font-light md:text-base">
                           Building skills and capability
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t md:first:border-t-0 border-black">
-                      <a
-                        href="/marketdata/ExpiryCalendar.shtml?expiry"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                          <div className="">ICE Expiry Calendar</div>
+                          <div className="">BlockTech Expiry Calendar</div>
                           <div className="flex flex-1 justify-start pl-4">
                             <svg
                               stroke="currentColor"
@@ -261,17 +262,17 @@ const Resources = () => {
                           </div>
                         </div>
                         <div className="text-[0.75rem] font-light md:text-base">
-                          Trade dates for ICE Markets
+                          Trade dates for BlockTech Markets
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t md:first:border-t-0 border-black">
-                      <a
-                        href="/fees"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                          <div className="">ICE Fees</div>
+                          <div className="">BlockTech Fees</div>
                           <div className="flex flex-1 justify-start pl-4">
                             <svg
                               stroke="currentColor"
@@ -294,17 +295,17 @@ const Resources = () => {
                         <div className="text-[0.75rem] font-light md:text-base">
                           Specific fee pricing
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="flex-1">
                     <div className="flex py-2 border-t md:first:border-t-0 border-black">
-                      <a
-                        href="/clearing/margin-models"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                          <div className="">ICE Margins</div>
+                          <div className="">BlockTech Margins</div>
                           <div className="flex flex-1 justify-start pl-4">
                             <svg
                               stroke="currentColor"
@@ -325,17 +326,17 @@ const Resources = () => {
                           </div>
                         </div>
                         <div className="text-[0.75rem] font-light md:text-base">
-                          Rates for ICE Futures and Endex
+                          Rates for BlockTech Futures and Endex
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t md:first:border-t-0 border-black">
-                      <a
-                        href="/market-data/desktop-solutions/mobile"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                          <div className="">ICE Mobile</div>
+                          <div className="">BlockTech Mobile</div>
                           <div className="flex flex-1 justify-start pl-4">
                             <svg
                               stroke="currentColor"
@@ -356,13 +357,13 @@ const Resources = () => {
                           </div>
                         </div>
                         <div className="text-[0.75rem] font-light md:text-base">
-                          Trade remotely via the ICE app
+                          Trade remotely via the BlockTech app
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t md:first:border-t-0 border-black">
-                      <a
-                        href="/alerts"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -387,17 +388,17 @@ const Resources = () => {
                           </div>
                         </div>
                         <div className="text-[0.75rem] font-light md:text-base">
-                          The current status of ICE systems
+                          The current status of BlockTech systems
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="flex py-2 border-t md:first:border-t-0 border-black">
-                      <a
-                        href="/market-data/desktop-solutions/trade"
+                      <Link
+                        href="#"
                         className="flex w-full flex-col hover:no-underline text-black"
                       >
                         <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                          <div className="">WebICE</div>
+                          <div className="">WebBlockTech</div>
                           <div className="flex flex-1 justify-start pl-4">
                             <svg
                               stroke="currentColor"
@@ -418,9 +419,9 @@ const Resources = () => {
                           </div>
                         </div>
                         <div className="text-[0.75rem] font-light md:text-base">
-                          ICE Exchange trading platform
+                          BlockTech Exchange trading platform
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

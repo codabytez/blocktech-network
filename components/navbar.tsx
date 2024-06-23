@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/logo/Logo-01.png";
 import { NextPage } from "next";
+import { ROUTES } from "@/constants/routes";
 
 const Navbar: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Navbar: NextPage = () => {
         <div className="flex-1"></div>
         <div className="text-xxs hidden md:text-xs lg:contents">
           <Link
-            href="#"
+            href="/"
             className="inline-flex items-center no-underline hover:underline cursor-pointer text-black hover:text-black font-bold"
           >
             <span>BlockTech</span>
@@ -26,22 +27,19 @@ const Navbar: NextPage = () => {
           </Link>
           <span> | </span>
           <Link
-            href="#"
-            data-checked="false"
+            href={ROUTES.LOGIN}
             className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black text-white border-white shadow-lg  hover:text-primary    active:text-primary  active:shadow-none  checked:text-primary   text-xxs md:text-xs gap-1 md:gap-2 rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-2 md:px-3 py-1 md:py-2 cursor-pointer uppercase break-words"
           >
             Login
           </Link>
           <Link
-            href="#"
-            data-checked="false"
+            href={ROUTES.SIGNUP}
             className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:shadow-none active:translate-y-px max-w-full select-none bg-black text-white border-white shadow-lg  hover:text-primary active:text-primary checked:text-primary text-xxs md:text-xs gap-1 md:gap-2 rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-2 md:px-3 py-1 md:py-2 cursor-pointer uppercase break-words"
           >
             WebBlockTech
           </Link>
         </div>
         <div className="contents lg:hidden">
-          <div className="hidden"></div>
           <div className="flex gap-2 overflow-hidden">
             <button className="flex h-12 w-12 items-center justify-center text-2xl">
               <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden">
@@ -88,62 +86,46 @@ const Navbar: NextPage = () => {
         </div>
       </div>
       <div className="px-3 lg:px-24 hidden items-center gap-8 py-8 lg:flex">
-        <Link href="#">
-          <Image src={logo} alt="BlockTech Logo" width={50} height={50} />
+        <Link href="/">
+          <Image src={logo} alt="BlockTech Logo" width={100} height={100} />
         </Link>
         <nav className="flex h-24 items-stretch justify-between">
-          <button
-            type="button"
-            className="group cursor-pointer border-0 bg-transparent px-8 text-sm focus:outline-none"
+          <Link
+            href={"#"}
+            className="group cursor-pointer border-0 bg-transparent px-8 text-sm focus:outline-none flex items-center"
           >
             <div className="border-b-4 group-hover:border-black group-focus:border-black border-transparent">
               Solutions
             </div>
-          </button>
-          <div className="hidden"></div>
-          <button
-            type="button"
-            className="group cursor-pointer border-0 bg-transparent px-8 text-sm focus:outline-none"
+          </Link>
+
+          <Link
+            href={ROUTES.INSIGHTS}
+            className="group cursor-pointer border-0 bg-transparent px-8 text-sm focus:outline-none flex items-center"
           >
-            <div className="border-b-4 group-hover:border-black group-focus:border-black border-transparent">
-              Resources
-            </div>
-          </button>
-          <div className="hidden"></div>
-          <button
-            type="button"
-            className="group cursor-pointer border-0 bg-transparent px-8 text-sm focus:outline-none"
-          >
-            <div className="border-b-4 group-hover:border-black group-focus:border-black border-transparent">
+            <p className="border-b-4 group-hover:border-black group-focus:border-black border-transparent">
               Insights
-            </div>
-          </button>
-          <div className="hidden"></div>
-          <button
-            type="button"
-            className="group cursor-pointer border-0 bg-transparent px-8 text-sm focus:outline-none"
+            </p>
+          </Link>
+
+          <Link
+            href={ROUTES.ABOUT}
+            className="group cursor-pointer border-0 bg-transparent px-8 text-sm focus:outline-none flex items-center"
           >
             <div className="border-b-4 group-hover:border-black group-focus:border-black border-transparent">
               About Us
             </div>
-          </button>
-          <div className="hidden"></div>
-          <div className="hidden"></div>
+          </Link>
         </nav>
         <div className="flex-1"></div>
-        <div className="hidden"></div>
-        <form
-          method="GET"
-          className="m-0 flex items-center text-black"
-          action="/site-search"
-        >
+
+        <form className="m-0 flex items-center text-black">
           <div className="relative text-base">
             <input
               type="search"
               name="q"
               placeholder="Search"
               className="border-0 border-b-2 border-solid bg-transparent p-2 text-base duration-100 focus:border-primary focus:outline-none border-black"
-              value=""
             />
             <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 px-4">
               <svg role="img" width="1em" height="1em" viewBox="0 0 18 18">
@@ -158,7 +140,6 @@ const Navbar: NextPage = () => {
               </svg>
             </div>
           </div>
-          <div className="hidden"></div>
         </form>
       </div>
     </div>

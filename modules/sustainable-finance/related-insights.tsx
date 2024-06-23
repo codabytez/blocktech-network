@@ -1,12 +1,13 @@
-import React from "react";
+import { NextPage } from "next";
+import Link from "next/link";
 
-const RelatedInsights = () => {
+const RelatedInsights: NextPage = () => {
   return (
-    <div id="integration-id-59e8287" className="pb-10 xl:pb-20">
-      <div id="integration-id-e7e4c58" className="pb-0 xl:pb-5">
-        <div id="integration-id-de810eb" className="">
+    <div className="pb-10 xl:pb-20">
+      <div className="pb-0 xl:pb-5">
+        <div className="">
           <div className="text-center">
-            <h2 className="m-0 font-headings border-0 pb-0 mers:border-b-2 mers:border-solid mers:border-secondary mers:pb-2.5 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-3xl md:text-5xl">
+            <h2 className="m-0 font-headings border-0 pb-0 font-medium normal-case leading-none text-3xl md:text-5xl">
               Related insights
             </h2>
             <hr className="border-0 border-black border-t-2 w-1/5 border-solid mx-auto my-4" />
@@ -14,10 +15,7 @@ const RelatedInsights = () => {
         </div>
       </div>
       <div className="w-full overflow-x-auto">
-        <div
-          id=":58994:R2fcp::main"
-          className="justify-center justify-items-center gap-x-2 gap-y-4 p-2 flex flex-row flex-wrap"
-        >
+        <div className="justify-center justify-items-center gap-x-2 gap-y-4 p-2 flex flex-row flex-wrap">
           <div className="flex">
             <div className="flex text-black border-gray border-2 border-solid w-96 flex-col-reverse">
               <div className="flex flex-1 justify-between gap-8 p-8 flex-col">
@@ -29,7 +27,6 @@ const RelatedInsights = () => {
                   </div>
                   <div className="mt-10">
                     <div className="text-center">
-                      {" "}
                       <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
                         Amid growing evidence that climate events can impact
                         financial markets, how can participants assess risk?
@@ -39,9 +36,8 @@ const RelatedInsights = () => {
                 </div>
                 <div>
                   <div className="text-center">
-                    <a
-                      href="https://www.ice.com/insights/sustainable-finance/monitoring-real-time-hazard-events"
-                      data-checked="false"
+                    <Link
+                      href="#"
                       className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary admin:hover:text-white    active:text-primary admin:hover:text-white  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                     >
                       <span>
@@ -62,7 +58,7 @@ const RelatedInsights = () => {
                         </svg>
                       </span>
                       <span>Read more</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -94,9 +90,8 @@ const RelatedInsights = () => {
                 </div>
                 <div>
                   <div className="text-center">
-                    <a
-                      href="https://www.ice.com/insights/sustainable-finance/mortgage-delinquencies-and-climate-risk"
-                      data-checked="false"
+                    <Link
+                      href="#"
                       className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary admin:hover:text-white    active:text-primary admin:hover:text-white  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                     >
                       <span>
@@ -117,18 +112,13 @@ const RelatedInsights = () => {
                         </svg>
                       </span>
                       <span>Read more</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <a
-            className="flex hover:no-underline active:no-underline"
-            href="https://www.ice.com/insights/sustainable-finance/insurance-affordability-a-growing-risk-to-home-prices-and-mortgage-backed-securities"
-            target="_self"
-            rel="noreferrer noopener"
-          >
+          <Link href="#" rel="noreferrer noopener">
             <div className="flex text-black border-gray border-2 border-solid w-96 flex-col-reverse">
               <div className="flex flex-1 justify-between gap-8 p-8 flex-col">
                 <div>
@@ -140,7 +130,6 @@ const RelatedInsights = () => {
                   </div>
                   <div className="mt-10">
                     <div className="text-center">
-                      {" "}
                       <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
                         Around 10M U.S. homes could face material price declines
                         under ICE DeltaTerra base modelling scenario.
@@ -153,7 +142,7 @@ const RelatedInsights = () => {
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

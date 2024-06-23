@@ -5,7 +5,7 @@ import connection from "@/public/images/Make_the_Connection_Tagline_blk_rgb.png"
 import exchanges from "@/public/images/Tile-General-512x250-03.jpg";
 import fixedIncome from "@/public/images/Tile-Data_Tech-512x250-02.jpg";
 import trading from "@/public/images/Tile-Data_Tech-512x250-05.jpg";
-import staking from "@/public/images/Tile-Mortgage-512x250-05.jpg";
+import staking from "@/public/images/Hero-Data_Tech-1920x550-15.jpg";
 
 const About: NextPage = () => {
   return (
@@ -24,7 +24,7 @@ const About: NextPage = () => {
         <div className="pr-2 pl-2 w-full md:w-2/4">
           <div className="">
             <div className="text-center">
-              <h3 className="m-0 font-headings border-0 pb-0 mers:border-b-2 mers:border-solid mers:border-secondary mers:pb-2.5 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-xl md:text-3xl">
+              <h3 className="m-0 font-headings border-0 pb-0 font-medium normal-case leading-none text-xl md:text-3xl">
                 Data, technology and expertise that inspire innovation and
                 create opportunity.
               </h3>
@@ -105,7 +105,7 @@ const About: NextPage = () => {
                       alt="Exchanges"
                       width={512}
                       height={250}
-                      className="object-contain object-center"
+                      className="object-cover object-center h-[200px]"
                     />
                   </div>
                 </div>
@@ -177,7 +177,7 @@ const About: NextPage = () => {
                       alt="Fixed Income"
                       width={512}
                       height={250}
-                      className="object-contain object-center"
+                      className="object-cover object-center h-[200px]"
                     />
                   </div>
                 </div>
@@ -188,7 +188,7 @@ const About: NextPage = () => {
                         <div className="mt-10">
                           <div className="flex flex-col items-center relative w-max mx-auto">
                             <h4 className="font-semibold text-4xl text-right">
-                              TRADING <br /> TECHNOLOGY
+                              TRADING
                             </h4>
                             <div className="w-6 h-6 border-t-[6px] border-r-[6px] border-primary absolute -top-3 -right-3" />
                           </div>
@@ -250,7 +250,7 @@ const About: NextPage = () => {
                       alt="Trading Technology"
                       width={512}
                       height={250}
-                      className="object-contain object-center"
+                      className="object-cover object-center h-[200px]"
                     />
                   </div>
                 </div>
@@ -320,7 +320,7 @@ const About: NextPage = () => {
                       alt="Staking"
                       width={512}
                       height={250}
-                      className="object-contain object-center"
+                      className="object-cover object-center h-[200px]"
                     />
                   </div>
                 </div>

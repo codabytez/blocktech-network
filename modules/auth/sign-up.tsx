@@ -9,9 +9,8 @@ import block from "@/public/images/Block-White-64px.png";
 import positions from "@/public/images/Positions-White-64px.png";
 import ICEHub from "@/public/images/ETFHub-White-64px.png";
 import quoteBoard from "@/public/images/QuoteBoard-White-64px.png";
-import { ROUTES } from "@/constants/routes";
 
-const Login: NextPage = () => {
+const SignUp: NextPage = () => {
   return (
     <div className="bg-white relative z-10 w-full py-6 px-[4%] mx-auto">
       <div className="min-h-[79vh]">
@@ -21,12 +20,12 @@ const Login: NextPage = () => {
               2FA/Passcode Help
             </Link>
           </div>
-          <h1 className="text-3xl pb-2">Login</h1>
+          <h1 className="text-3xl pb-2">SignUp</h1>
           <div>
             <div className="relative mb-5 w-full text-left">
               <hr className="border-t my-4 border-[#d2d4d3]" />
               <span className="absolute -top-2.5 text-[#818078] bg-white pr-2.5 font-bold text-sm">
-                Blocktech Connect Apps
+                BlockTech Connect Apps
               </span>
             </div>
 
@@ -43,7 +42,7 @@ const Login: NextPage = () => {
                       className="icon-link-label"
                       style={{ fontSize: "10px" }}
                     >
-                      WebBlocktech
+                      WebBlockTech
                     </div>
                   </Link>
                   <Link
@@ -135,7 +134,7 @@ const Login: NextPage = () => {
                       className="icon-link-label"
                       style={{ fontSize: "10px" }}
                     >
-                      Blocktech
+                      BlockTech
                     </div>
                   </Link>
                   <Link
@@ -163,13 +162,13 @@ const Login: NextPage = () => {
             <div className="relative mb-5 w-full text-left">
               <hr className="border-t my-4 border-[#d2d4d3]" />
               <span className="absolute -top-2.5 text-[#818078] bg-white pr-2.5 font-bold text-sm">
-                Other Blocktech Apps
+                Other BlockTech Apps
               </span>
             </div>
 
             <p className="text-xs mb-6">
               To access additional applications - please enter your User
-              ID/Password and click Login. You will then see the applications
+              ID/Password and click SignUp. You will then see the applications
               you have access to. Click on icon to access the application.
             </p>
           </div>
@@ -244,9 +243,9 @@ const Login: NextPage = () => {
                             <button
                               type="submit"
                               className="bg-[#231f20] py-2 px-3 border-2 text-center text-sm text-white"
-                              name="loginPageSubmitBtn"
+                              name="signupPageSubmitBtn"
                             >
-                              Login
+                              SignUp
                             </button>
                           </div>
                         </div>
@@ -260,8 +259,8 @@ const Login: NextPage = () => {
             <div>
               <br />
               <p className="text-xs mb-6">
-                To access Blocktech Data Services{" "}
-                <Link href={ROUTES.SIGNUP} className="text-[#8DC7E9]">
+                To access BlockTech Data Services{" "}
+                <Link href="#" className="text-[#8DC7E9]">
                   Click here
                 </Link>
               </p>
@@ -269,9 +268,9 @@ const Login: NextPage = () => {
 
             <br />
             <p className="text-xs text-[#B00017]">
-              Blocktech Applications require Blocktech WebStart to run. Please
-              download and install Blocktech WebStart from{" "}
-              <Link href={ROUTES.SIGNUP} className="text-[#8DC7E9]">
+              BlockTech Applications require BlockTech WebStart to run. Please
+              download and install BlockTech WebStart from{" "}
+              <Link href="#" className="text-[#8DC7E9]">
                 here
               </Link>{" "}
               before attempting to launch the app.
@@ -292,4 +291,4 @@ const Login: NextPage = () => {
   );
 };
 
-export default Login;
+export default SignUp;

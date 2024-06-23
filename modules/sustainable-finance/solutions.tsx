@@ -1,42 +1,41 @@
-import React from "react";
+import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import sunrise from "@/public/images/Hero-ESG-1920x550-01.jpg";
 
-const Solutions = () => {
+const Solutions: NextPage = () => {
   return (
-    <div id="integration-id-b5ff680" className="pb-10 xl:pb-20">
-      <div id="integration-id-1ad3fa5" className="pb-0 xl:pb-5">
-        <div id="integration-id-a77549f" className="">
+    <div className="pb-10 xl:pb-20">
+      <div className="pb-0 xl:pb-5">
+        <div>
           <div className="text-center">
-            <h2 className="m-0 font-headings border-0 pb-0 mers:border-b-2 mers:border-solid mers:border-secondary mers:pb-2.5 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-3xl md:text-5xl">
+            <h2 className="m-0 font-headings border-0 pb-0 font-medium normal-case leading-none text-3xl md:text-5xl">
               Solutions
             </h2>
             <hr className="border-0 border-black border-t-2 w-1/5 border-solid mx-auto my-4" />
           </div>
         </div>
       </div>
-      <div
-        id="integration-id-f4587ed"
-        className="flex flex-col items-stretch gap-4 flex-grow sm:flex-row-reverse"
-      >
+      <div className="flex flex-col items-stretch gap-4 flex-grow sm:flex-row-reverse">
         <div className="sm:flex-1 relative overflow-hidden">
-          <img
-            src="https://www.ice.com/publicdocs/images/Hero-ESG-1920x550-01.jpg"
+          <Image
+            src={sunrise}
             alt="Sunrise through forest"
+            width={1920}
+            height={550}
             className="w-full sm:absolute sm:left-0 sm:top-0 sm:h-full object-cover object-center"
           />
         </div>
         <div className="sm:flex-1 overflow-hidden">
-          <div
-            id="integration-id-9d15ccb"
-            className="flex gap-x-4 text-left flex-col md:flex-row"
-          >
+          <div className="flex gap-x-4 text-left flex-col md:flex-row">
             <div className="flex-1">
               <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                <a
-                  href="/energy/environmental"
+                <Link
+                  href="#"
                   className="flex w-full flex-col hover:no-underline text-black"
                 >
                   <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                    <div className="">Environmental Markets </div>
+                    <p>Environmental Markets </p>
                     <div className="flex flex-1 justify-start pl-4">
                       <svg
                         stroke="currentColor"
@@ -67,15 +66,15 @@ const Solutions = () => {
                     markets span Europe and North America — the world’s most
                     liquid environmental markets.
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                <a
-                  href="/fixed-income-data-services/data-and-analytics/sustainable-finance-data"
+                <Link
+                  href="#"
                   className="flex w-full flex-col hover:no-underline text-black"
                 >
                   <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                    <div className="">Sustainable Finance Data</div>
+                    <p>Sustainable Finance Data</p>
                     <div className="flex flex-1 justify-start pl-4">
                       <svg
                         stroke="currentColor"
@@ -106,15 +105,15 @@ const Solutions = () => {
                     you uncover opportunities, manage risk, and provide
                     transparency to your client.
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                <a
-                  href="/equity-derivatives"
+                <Link
+                  href="#"
                   className="flex w-full flex-col hover:no-underline text-black"
                 >
                   <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                    <div className="">ESG Equity Derivatives </div>
+                    <p>ESG Equity Derivatives </p>
                     <div className="flex flex-1 justify-start pl-4">
                       <svg
                         stroke="currentColor"
@@ -139,7 +138,7 @@ const Solutions = () => {
                     ESG strategies for investors seeking to access and hedge ESG
                     exposure.
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

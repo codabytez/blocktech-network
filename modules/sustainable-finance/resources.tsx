@@ -1,6 +1,7 @@
-import React from "react";
+import { NextPage } from "next";
+import Link from "next/link";
 
-const Resources = () => {
+const Resources: NextPage = () => {
   return (
     <div className="pb-10 xl:pb-20">
       <div className="bg-primary flex pt-10 pr-10 pb-10 pl-10 gap-4 flex-col text-center w-full xl:pt-16 xl:pr-0 xl:pb-16 xl:pl-0 xl:w-full">
@@ -17,8 +18,8 @@ const Resources = () => {
               <div className="flex gap-x-4 text-left flex-col md:flex-row">
                 <div className="flex-1">
                   <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                    <a
-                      href="/about/corporate-responsibility"
+                    <Link
+                      href="#"
                       className="flex w-full flex-col hover:no-underline text-black"
                     >
                       <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -48,11 +49,11 @@ const Resources = () => {
                         context on our approach to managing the sustainability
                         risks and opportunities that we face as a company.
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                    <a
-                      href="/fixed-income-data-services/access-and-delivery/desktop-web-platforms/ice-connect/sustainability"
+                    <Link
+                      href="#"
                       className="flex w-full flex-col hover:no-underline text-black"
                     >
                       <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -83,7 +84,7 @@ const Resources = () => {
                         sustainable finance data &amp; indices, global
                         renewables and fuels data, and more.
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

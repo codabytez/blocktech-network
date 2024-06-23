@@ -1,10 +1,13 @@
-const FixedIncomeMarket = () => {
+import { NextPage } from "next";
+import Link from "next/link";
+
+const FixedIncomeMarket: NextPage = () => {
   return (
     <div className="pb-10 xl:pb-20">
       <div className="bg-[#71c5e8] flex pt-10 pr-10 pb-10 pl-10 gap-4 flex-col text-center w-full xl:pt-16 xl:pr-0 xl:pb-16 xl:pl-0 xl:w-full">
         <div className="px-3 lg:px-24">
           <div className="">
-            <h2 className="m-0 font-headings border-0 pb-0 mers:border-b-2 mers:border-solid mers:border-secondary mers:pb-2.5 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-3xl md:text-5xl">
+            <h2 className="m-0 font-headings border-0 pb-0 font-medium normal-case leading-none print:break-after-avoid text-3xl md:text-5xl">
               Transforming Today’s Fixed-Income Markets
             </h2>
             <div className="mb-6"></div>
@@ -14,8 +17,8 @@ const FixedIncomeMarket = () => {
             </div>
             <div className="mb-6"></div>
             <div>
-              <a
-                href="/fixed-income-data-services/fixed-income/transforming-todays-fixed-income-markets"
+              <Link
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-[#71c5e8] text-white border-white shadow-lg  hover:text-[#71c5e8] admin:hover:text-white    active:text-[#71c5e8] admin:hover:text-white active:shadow-none checked:text-[#71c5e8] text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
@@ -38,7 +41,7 @@ const FixedIncomeMarket = () => {
                   </svg>
                 </span>
                 <span>Read now</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

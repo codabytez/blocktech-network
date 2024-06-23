@@ -1,6 +1,8 @@
 import Image from "next/image";
 import logo from "@/public/logo/Logo-01.png";
 import { NextPage } from "next";
+import Link from "next/link";
+import { ROUTES } from "@/constants/routes";
 
 const Footer: NextPage = () => {
   return (
@@ -9,19 +11,19 @@ const Footer: NextPage = () => {
         <div className="px-3 lg:px-24 bg-gray pb-10 pt-24">
           <footer>
             <div className="flex flex-col items-center justify-center gap-10 pb-8 sm:flex-row sm:items-start sm:gap-16">
-              <a href="/">
+              <Link href="/">
                 <Image
                   src={logo}
                   alt="BlockTech Logo"
                   width={100}
                   height={100}
                 />
-              </a>
+              </Link>
               <div className="sm:hidden">
                 <ul className="m-0 flex list-none justify-center gap-4 p-0">
                   <li>
-                    <a
-                      href="https://www.twitter.com/BlockTech_Markets"
+                    <Link
+                      href="#"
                       title="Twitter"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -38,11 +40,11 @@ const Footer: NextPage = () => {
                           className="fill-current"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://www.linkedin.com/company/intercontinentalexchange-inc-"
+                    <Link
+                      href="#"
                       title="LinkedIn"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -59,7 +61,7 @@ const Footer: NextPage = () => {
                       >
                         <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                       </svg>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -74,38 +76,38 @@ const Footer: NextPage = () => {
                     </h5>
                     <ul className="m-0 list-none space-y-4 p-0 text-xs font-normal">
                       <li>
-                        <a
-                          href="/about/exchanges-clearing"
+                        <Link
+                          href={ROUTES.EXCHANGES_CLEARING}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Markets and Exchanges
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/fixed-income-data-services"
+                        <Link
+                          href={ROUTES.FIXED_INCOME}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Fixed Income and Data Services
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://www.icemortgagetechnology.com/"
+                        <Link
+                          href={ROUTES.MORTGAGE_TECHNOLOGY}
                           className="text-current no-underline hover:underline text-base"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           Mortgage Technology
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/iba"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           Benchmark Administration
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -115,60 +117,60 @@ const Footer: NextPage = () => {
                     </h5>
                     <ul className="m-0 list-none space-y-4 p-0 text-xs font-normal">
                       <li>
-                        <a
-                          href="/solutions/markets"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           Markets
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/solutions/clearing"
+                        <Link
+                          href={ROUTES.EXCHANGES_CLEARING}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Clearing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/products"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           Product Guide
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/marketdata/reports"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           Market Reports
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/expiry-calendar"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           Expiry Calendars
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/clearing/margin-models"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           Margins
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/fees"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           Fees
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -178,38 +180,38 @@ const Footer: NextPage = () => {
                     </h5>
                     <ul className="m-0 list-none space-y-4 p-0 text-xs font-normal">
                       <li>
-                        <a
-                          href="/contact"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           Trade and Clearing Helpdesk
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/contact"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           BlockTech Data Services Support
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/support/education"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                         >
                           BlockTech Education
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://developer.ice.com"
+                        <Link
+                          href="#"
                           className="text-current no-underline hover:underline text-base"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           BlockTech Developer Portal
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -219,56 +221,56 @@ const Footer: NextPage = () => {
                     </h5>
                     <ul className="m-0 list-none space-y-4 p-0 text-xs font-normal">
                       <li>
-                        <a
-                          href="/media"
+                        <Link
+                          href={ROUTES.ABOUT}
                           className="text-current no-underline hover:underline text-base"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           Media Center
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="https://ir.theice.com/home/default.aspx"
+                        <Link
+                          href={ROUTES.ABOUT}
                           className="text-current no-underline hover:underline text-base"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           Investor Relations
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/contact"
+                        <Link
+                          href={ROUTES.ABOUT}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Contact
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/careers"
+                        <Link
+                          href={ROUTES.ABOUT}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Careers
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/events"
+                        <Link
+                          href={ROUTES.ABOUT}
                           className="text-current no-underline hover:underline text-base"
                         >
                           BlockTech Events
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/about/corporate-responsibility"
+                        <Link
+                          href={ROUTES.ABOUT}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Sustainability
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -278,36 +280,36 @@ const Footer: NextPage = () => {
                     </h5>
                     <ul className="m-0 list-none space-y-4 p-0 text-xs font-normal">
                       <li>
-                        <a
-                          href="/insights/topic/sustainable-finance"
+                        <Link
+                          href={ROUTES.INSIGHTS}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Sustainable Finance
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/insights/topic/energy-markets"
+                        <Link
+                          href={ROUTES.INSIGHTS}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Energy Markets
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/insights/topic/fixed-income-data"
+                        <Link
+                          href={ROUTES.FIXED_INCOME}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Fixed Income and Data
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/insights/topic/mortgage"
+                        <Link
+                          href={ROUTES.MORTGAGE_TECHNOLOGY}
                           className="text-current no-underline hover:underline text-base"
                         >
                           Mortgage
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -321,8 +323,8 @@ const Footer: NextPage = () => {
               </div>
               <ul className="m-0 flex list-none justify-center gap-4 p-0">
                 <li>
-                  <a
-                    href="https://www.twitter.com/BlockTech_Markets"
+                  <Link
+                    href="#"
                     title="Twitter"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -339,11 +341,11 @@ const Footer: NextPage = () => {
                         className="fill-current"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.linkedin.com/company/intercontinentalexchange-inc-"
+                  <Link
+                    href="#"
                     title="LinkedIn"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -360,7 +362,7 @@ const Footer: NextPage = () => {
                     >
                       <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -369,81 +371,84 @@ const Footer: NextPage = () => {
               <ul className="m-0 flex list-none flex-col gap-4 px-8 py-0 sm:flex-row sm:gap-0 sm:px-0">
                 <li className="block sm:inline">
                   <span className="hidden sm:inline"></span>
-                  <a
-                    href="/terms-of-use"
+                  <Link
+                    href="#"
                     className="text-current no-underline hover:underline"
                   >
                     Terms of Use
-                  </a>
+                  </Link>
                 </li>
                 <li className="block sm:inline">
                   <span className="hidden sm:inline">&nbsp;|&nbsp;</span>
-                  <a
-                    href="/privacy-policy"
+                  <Link
+                    href="#"
                     className="text-current no-underline hover:underline"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className="block sm:inline">
                   <span className="hidden sm:inline">&nbsp;|&nbsp;</span>
-                  <a
-                    href="/privacy-policy/events"
+                  <Link
+                    href="#"
                     className="text-current no-underline hover:underline"
                   >
                     Event Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className="block sm:inline">
                   <span className="hidden sm:inline">&nbsp;|&nbsp;</span>
-                  <a
-                    href="/security"
+                  <Link
+                    href="#"
                     className="text-current no-underline hover:underline"
                   >
                     Security
-                  </a>
+                  </Link>
                 </li>
                 <li className="block sm:inline">
                   <span className="hidden sm:inline">&nbsp;|&nbsp;</span>
-                  <a
-                    href="/cookies"
+                  <Link
+                    href="#"
                     className="text-current no-underline hover:underline"
                   >
                     Cookies
-                  </a>
+                  </Link>
                 </li>
                 <li className="block sm:inline">
                   <span className="hidden sm:inline">&nbsp;|&nbsp;</span>
-                  <a className="text-current no-underline hover:underline">
+                  <Link
+                    href="#"
+                    className="text-current no-underline hover:underline"
+                  >
                     Do Not Sell My Personal Information
-                  </a>
+                  </Link>
                 </li>
                 <li className="block sm:inline">
                   <span className="hidden sm:inline">&nbsp;|&nbsp;</span>
-                  <a
-                    href="/supported-browsers"
+                  <Link
+                    href="#"
                     className="text-current no-underline hover:underline"
                   >
                     Supported Browsers
-                  </a>
+                  </Link>
                 </li>
                 <li className="block sm:inline">
                   <span className="hidden sm:inline">&nbsp;|&nbsp;</span>
-                  <a
-                    href="/data-protection"
+                  <Link
+                    href="#"
                     className="text-current no-underline hover:underline"
                   >
                     Data Protection
-                  </a>
+                  </Link>
                 </li>
                 <li className="block sm:inline">
                   <span className="hidden sm:inline">&nbsp;|&nbsp;</span>
-                  <a
-                    href="/registered-investment-adviser-notice"
+                  <Link
+                    href="#"
                     className="text-current no-underline hover:underline"
                   >
                     Registered Investment Advisor Notice
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="hidden sm:block">

@@ -1,23 +1,28 @@
-import React from "react";
+import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import roadNetwork from "@/public/images/Hero-ESG-1920x550-26.jpg";
 
-const TradeExecution = () => {
+const TradeExecution: NextPage = () => {
   return (
     <div className="pb-10 xl:pb-20">
       <div className="pb-0 xl:pb-5">
-        <div className="">
+        <p>
           <div className="text-center">
-            <h2 className="m-0 font-headings border-0 pb-0 mers:border-b-2 mers:border-solid mers:border-secondary mers:pb-2.5 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-3xl md:text-5xl">
+            <h2 className="m-0 font-headings border-0 pb-0 font-medium normal-case leading-none print:break-after-avoid text-3xl md:text-5xl">
               Trade Execution
             </h2>
             <hr className="border-0 border-black border-t-2 w-1/5 border-solid mx-auto my-4" />
           </div>
-        </div>
+        </p>
       </div>
       <div className="flex flex-col items-stretch gap-4 flex-grow sm:flex-row-reverse">
         <div className="sm:flex-1 relative overflow-hidden">
-          <img
-            src="https://www.ice.com/publicdocs/images/Hero-ESG-1920x550-26.jpg"
+          <Image
+            src={roadNetwork}
             alt="Road network"
+            width={1920}
+            height={550}
             className="w-full sm:absolute sm:left-0 sm:top-0 sm:h-full object-cover object-center"
           />
         </div>
@@ -25,12 +30,12 @@ const TradeExecution = () => {
           <div className="flex gap-x-4 text-left flex-col md:flex-row">
             <div className="flex-1">
               <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                <a
-                  href="/fixed-income-data-services/fixed-income/ice-bonds"
+                <Link
+                  href="#"
                   className="flex w-full flex-col hover:no-underline text-black"
                 >
                   <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                    <div className="">ICE Bonds</div>
+                    <p>BlockTech Bonds</p>
                     <div className="flex flex-1 justify-start pl-4">
                       <svg
                         stroke="currentColor"
@@ -54,15 +59,15 @@ const TradeExecution = () => {
                     Offering deep liquidity pools that support multiple trading
                     protocols.
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                <a
-                  href="/fixed-income-data-services/fixed-income/ice-credit-trade"
+                <Link
+                  href="#"
                   className="flex w-full flex-col hover:no-underline text-black"
                 >
                   <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                    <div className="">ICE Credit Trade</div>
+                    <p>BlockTech Credit Trade</p>
                     <div className="flex flex-1 justify-start pl-4">
                       <svg
                         stroke="currentColor"
@@ -86,15 +91,15 @@ const TradeExecution = () => {
                     Auction-style trading for investment grade, high yield
                     corporate and emerging market bonds.
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                <a
-                  href="/fixed-income-data-services/fixed-income/ice-bond-curves"
+                <Link
+                  href="#"
                   className="flex w-full flex-col hover:no-underline text-black"
                 >
                   <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                    <div className="">ICE Bond Curves</div>
+                    <p>BlockTech Bond Curves</p>
                     <div className="flex flex-1 justify-start pl-4">
                       <svg
                         stroke="currentColor"
@@ -114,19 +119,19 @@ const TradeExecution = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="text-[0.75rem] font-light md:text-xs">
+                  <p className="text-[0.75rem] font-light md:text-xs">
                     Gain more insight into financial markets with our
                     comprehensive curve offerings.
-                  </div>
-                </a>
+                  </p>
+                </Link>
               </div>
               <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                <a
-                  href="/fixed-income-data-services/fixed-income/trading-analytics"
+                <Link
+                  href="#"
                   className="flex w-full flex-col hover:no-underline text-black"
                 >
                   <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                    <div className="">Fixed Income Trading Analytics</div>
+                    <p>Fixed Income Trading Analytics</p>
                     <div className="flex flex-1 justify-start pl-4">
                       <svg
                         stroke="currentColor"
@@ -150,7 +155,7 @@ const TradeExecution = () => {
                     Increase transparency and help modernize your fixed income
                     order flow.
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

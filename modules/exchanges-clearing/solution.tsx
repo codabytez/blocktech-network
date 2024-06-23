@@ -1,6 +1,7 @@
-import React from "react";
+import { NextPage } from "next";
+import Link from "next/link";
 
-const Solution: React.FC = () => {
+const Solution: NextPage = () => {
   return (
     <div className="pb-10 xl:pb-20">
       <div className="pb-0 xl:pb-5">
@@ -37,11 +38,8 @@ const Solution: React.FC = () => {
                     <div className="">
                       <div className="text-center">
                         <div>
-                          <a
-                            data-is-button="true"
-                            data-variant="black"
-                            href={solution.link}
-                            data-checked="false"
+                          <Link
+                            href={"#"}
                             className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:shadow-none active:translate-y-px max-w-full select-none bg-black text-white border-white shadow-lg hover:text-primary active:text-primary checked:text-primary text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                           >
                             <span>
@@ -62,7 +60,7 @@ const Solution: React.FC = () => {
                               </svg>
                             </span>
                             <span>{solution.buttonText}</span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -79,43 +77,27 @@ const Solution: React.FC = () => {
 
 const solutions = [
   {
-    id: "6f7a0af",
     title: "WebICE",
-    descId: "104cdb3",
     description:
       "Access the deep liquidity and transparency of the ICE futures markets with our multi-asset trading application. This secure, flexible technology supports a range of trading and risk management tools.",
-    btnId: "a395d62",
-    link: "/market-data/desktop-solutions/trade",
     buttonText: "LEARN MORE",
   },
   {
-    id: "e50a56a",
     title: "ICE Connect",
-    descId: "c69fb7d",
     description:
       "Access to ICE proprietary data as well as prices from global exchanges, third-party news and advanced charting and analysis tools. Help manage price and currency risk across global markets and streamline your workflow to focus on your core business objectives.",
-    btnId: "0a32215",
-    link: "/market-data/desktop-solutions/ice-connect",
     buttonText: "LEARN MORE",
   },
   {
-    id: "667eebd",
     title: "Product guide",
-    descId: "4a6a534",
     description:
       "Our global network of regulated futures exchanges offers derivative trading across energy, fixed income, interest rates, equities, credit, currencies and metals. View contract specs and data for futures, options and OTC products spanning all major asset classes.",
-    btnId: "ba599a9",
-    link: "/products",
     buttonText: "All products",
   },
   {
-    id: "df142d5",
     title: "Proprietary data",
-    descId: "324e353",
     description:
       "Access to a broad universe of low-latency financial information with full depth-of-market data is increasingly important for market participants - firms need to acquire high-quality data from a range of different sources in a cost-efficient manner.",
-    btnId: "6377772",
-    link: "/market-data/proprietary-data",
     buttonText: "Learn More",
   },
 ];

@@ -6,4 +6,7 @@ export const ROUTES = {
   FIXED_INCOME: "/fixed-income",
   SUSTAINABLE_FINANCE: "/sustainable-finance",
   MORTGAGE_TECHNOLOGY: "/mortgage-technology",
+  INSIGHTS: "/insights",
+  LOGIN: "/login",
+  SIGNUP: "/signup",
 };

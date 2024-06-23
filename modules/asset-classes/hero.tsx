@@ -1,6 +1,9 @@
-import React from "react";
+import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import heroGeneral from "@/public/images/Hero-General-1920x550-06.jpg";
 
-const AssetClassesHero = () => {
+const AssetClassesHero: NextPage = () => {
   return (
     <div className="mb-16">
       <div className="bg-black text-white pt-2 pb-2 xl:pt-4 xl:pb-4">
@@ -9,8 +12,8 @@ const AssetClassesHero = () => {
             <div className="text-center">
               <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
                 Why financial participants matter to the commodity markets.{" "}
-                <a
-                  href="/oil/midland-wti"
+                <Link
+                  href="#"
                   className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#71C5E8] hover:text-[#71C5E8] font-bold"
                 >
                   <span>Learn more</span>
@@ -29,7 +32,7 @@ const AssetClassesHero = () => {
                       d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                     ></path>
                   </svg>
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -38,10 +41,12 @@ const AssetClassesHero = () => {
 
       <div className="pb-10 xl:pb-20 relative">
         <div>
-          <img
-            className="w-full h-[550px] max-h-screen select-none object-cover object-right"
+          <Image
+            src={heroGeneral}
             alt="Dam holding water"
-            src="https://www.ice.com/publicdocs/images/Hero-General-1920x550-06.jpg"
+            width={1920}
+            height={550}
+            className="w-full h-[550px] max-h-screen select-none object-cover object-right"
           />
           <div className="-mt-20 md:-mt-32 lg:-mt-40 relative z-10">
             <div className="px-3 lg:px-24">
@@ -61,13 +66,13 @@ const AssetClassesHero = () => {
                   </div>
                   <div className="">
                     <div>
-                      ICE provides transparent markets to invest, manage risk
-                      and raise capital across major asset classes. Our markets
-                      are supported by advanced data and analytics and built on
-                      sophisticated execution technology. Market participants
-                      worldwide rely on ICE’s exchanges and clearing services to
-                      assess price risk, find market opportunities and transact
-                      with confidence.
+                      BlockTech provides transparent markets to invest, manage
+                      risk and raise capital across major asset classes. Our
+                      markets are supported by advanced data and analytics and
+                      built on sophisticated execution technology. Market
+                      participants worldwide rely on BlockTech’s exchanges and
+                      clearing services to assess price risk, find market
+                      opportunities and transact with confidence.
                     </div>
                   </div>
                 </div>
@@ -79,7 +84,7 @@ const AssetClassesHero = () => {
                       </h4>
                       <div className="mb-6"></div>
                       <div>
-                        <a
+                        <Link
                           href="/contact"
                           className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:shadow-none active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary admin:hover:text-white active:text-primary checked:text-primary text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                         >
@@ -101,7 +106,7 @@ const AssetClassesHero = () => {
                             </svg>
                           </span>
                           <span>Contact us</span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

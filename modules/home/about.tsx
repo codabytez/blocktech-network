@@ -1,12 +1,21 @@
-import React from "react";
+import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import connection from "@/public/images/Make_the_Connection_Tagline_blk_rgb.png";
+import exchanges from "@/public/images/Tile-General-512x250-03.jpg";
+import fixedIncome from "@/public/images/Tile-Data_Tech-512x250-02.jpg";
+import trading from "@/public/images/Tile-Data_Tech-512x250-05.jpg";
+import staking from "@/public/images/Tile-Mortgage-512x250-05.jpg";
 
-const About = () => {
+const About: NextPage = () => {
   return (
     <div className="mt-6">
       <div className="flex pr-4 pl-4 gap-4 flex-col items-start sm:flex sm:flex-row sm:justify-center sm:items-center md:pl-0 md:flex-row lg:flex lg:justify-center lg:items-center">
-        <img
-          src="https://www.nyse.com/publicdocs/images/Make_the_Connection_Tagline_blk_rgb.png"
+        <Image
+          src={connection}
           alt="Make the Connection"
+          width={400}
+          height={100}
           className="object-contain object-center"
         />
       </div>
@@ -62,10 +71,8 @@ const About = () => {
                         <div className="">
                           <div className="text-center">
                             <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                              <a
-                                data-is-button="true"
-                                href="/about/exchanges-clearing"
-                                data-checked="false"
+                              <Link
+                                href="#"
                                 className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary admin:hover:text-white    active:text-primary admin:hover:text-white  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                               >
                                 <span>
@@ -86,24 +93,24 @@ const About = () => {
                                   </svg>
                                 </span>
                                 <span>Learn More</span>
-                              </a>
+                              </Link>
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <img
-                      alt="Stairs going up"
-                      src="https://www.ice.com/publicdocs/images/Tile-General-512x250-03.jpg"
-                      className="w-full object-cover object-center"
+
+                    <Image
+                      src={exchanges}
+                      alt="Exchanges"
+                      width={512}
+                      height={250}
+                      className="object-contain object-center"
                     />
                   </div>
                 </div>
                 <div className="flex">
-                  <div
-                    data-tileitem="true"
-                    className="flex text-black bg-[#e3e7e6] w-96 flex-col-reverse"
-                  >
+                  <div className="flex text-black bg-[#e3e7e6] w-96 flex-col-reverse">
                     <div className="flex flex-1 justify-between gap-8 p-8 flex-col">
                       <div>
                         <div className="mt-10">
@@ -136,10 +143,8 @@ const About = () => {
                         <div className="">
                           <div className="text-center">
                             <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                              <a
-                                data-is-button="true"
-                                href="/about/fixed-income-data"
-                                data-checked="false"
+                              <Link
+                                href="#"
                                 className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary admin:hover:text-white    active:text-primary admin:hover:text-white  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                               >
                                 <span>
@@ -160,24 +165,24 @@ const About = () => {
                                   </svg>
                                 </span>
                                 <span>Learn More</span>
-                              </a>
+                              </Link>
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <img
-                      alt="Data feed"
-                      src="https://www.ice.com/publicdocs/images/Tile-Data_Tech-512x250-02.jpg"
-                      className="w-full object-cover object-center"
+
+                    <Image
+                      src={fixedIncome}
+                      alt="Fixed Income"
+                      width={512}
+                      height={250}
+                      className="object-contain object-center"
                     />
                   </div>
                 </div>
                 <div className="flex">
-                  <div
-                    data-tileitem="true"
-                    className="flex text-black bg-[#e3e7e6] w-96 flex-col-reverse"
-                  >
+                  <div className="flex text-black bg-[#e3e7e6] w-96 flex-col-reverse">
                     <div className="flex flex-1 justify-between gap-8 p-8 flex-col">
                       <div>
                         <div className="mt-10">
@@ -209,12 +214,10 @@ const About = () => {
                         <div className="">
                           <div className="text-center">
                             <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                              <a
-                                data-is-button="true"
-                                href="https://www.icemortgagetechnology.com"
+                              <Link
+                                href="#"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                data-checked="false"
                                 className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75  active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg hover:text-primary admin:hover:text-white active:text-primary admin:hover:text-white  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                               >
                                 <span>
@@ -235,24 +238,24 @@ const About = () => {
                                   </svg>
                                 </span>
                                 <span>Learn More</span>
-                              </a>
+                              </Link>
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <img
-                      alt="Birds eye of houses"
-                      src="https://www.ice.com/publicdocs/images/Tile-Mortgage-512x250-05.jpg"
-                      className="w-full object-cover object-center"
+
+                    <Image
+                      src={trading}
+                      alt="Trading Technology"
+                      width={512}
+                      height={250}
+                      className="object-contain object-center"
                     />
                   </div>
                 </div>
                 <div className="flex">
-                  <div
-                    data-tileitem="true"
-                    className="flex text-black bg-[#e3e7e6] w-96 flex-col-reverse"
-                  >
+                  <div className="flex text-black bg-[#e3e7e6] w-96 flex-col-reverse">
                     <div className="flex flex-1 justify-between gap-8 p-8 flex-col">
                       <div>
                         <div className="mt-10">
@@ -265,7 +268,7 @@ const About = () => {
                             <div className="text-center">
                               <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
                                 <span className="font-bold">
-                                  Automating the industry
+                                  Creating a new standard
                                 </span>
                               </p>
                             </div>
@@ -282,13 +285,11 @@ const About = () => {
                         <div className="">
                           <div className="text-center">
                             <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                              <a
-                                data-is-button="true"
-                                href="https://www.icemortgagetechnology.com"
+                              <Link
+                                href="#"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                data-checked="false"
-                                className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:shadow-none active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary admin:hover:text-white    active:text-primary admin:hover:text-white  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
+                                className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary admin:hover:text-white    active:text-primary admin:hover:text-white  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                               >
                                 <span>
                                   <svg
@@ -308,16 +309,18 @@ const About = () => {
                                   </svg>
                                 </span>
                                 <span>Learn More</span>
-                              </a>
+                              </Link>
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <img
-                      alt="Birds eye of houses"
-                      src="https://www.ice.com/publicdocs/images/Tile-Mortgage-512x250-05.jpg"
-                      className="w-full object-cover object-center"
+                    <Image
+                      src={staking}
+                      alt="Staking"
+                      width={512}
+                      height={250}
+                      className="object-contain object-center"
                     />
                   </div>
                 </div>

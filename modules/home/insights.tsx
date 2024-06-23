@@ -1,4 +1,9 @@
 import { NextPage } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import harleyBassman from "@/public/images/Tile-Data_Tech-512x250-05.jpg";
+import dealingInDivergence from "@/public/images/Tile-Data_Tech-512x250-02.jpg";
+import linkingMunicipalBondSecurities from "@/public/images/Tile-ESG-512x250-05.jpg";
 
 const Insights: NextPage = () => {
   return (
@@ -6,8 +11,8 @@ const Insights: NextPage = () => {
       <div className="pb-0 xl:pb-5">
         <div className="">
           <div className="text-center">
-            <h2 className="m-0 font-headings border-0 pb-0 mers:border-b-2 mers:border-solid mers:border-secondary mers:pb-2.5 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-3xl md:text-5xl">
-              Insights from ICE
+            <h2 className="m-0 font-headings border-0 pb-0 font-medium normal-case leading-none print:break-after-avoid text-3xl md:text-5xl">
+              Insights from BlockTech
             </h2>
             <hr className="border-0 border-black border-t-2 w-1/5 border-solid mx-auto my-4" />
           </div>
@@ -28,20 +33,19 @@ const Insights: NextPage = () => {
                   <div className="mt-10">
                     <div className="text-center">
                       <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                        ICE’s President of Fixed Income &amp; Data Services
-                        Chris Edmonds speaks to Harley Bassman, Managing
-                        Director at Simplify Asset Management and ICE BofA MOVE
-                        index creator to gain further insight on market
-                        dynamics.
+                        BlockTech’s President of Fixed Income &amp; Data
+                        Services Chris Edmonds speaks to Harley Bassman,
+                        Managing Director at Simplify Asset Management and
+                        BlockTech BofA MOVE index creator to gain further
+                        insight on market dynamics.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div className="text-center">
-                    <a
-                      href="https://www.ice.com/insights/fixed-income-data/harley-bassman-a-bond-market-veteran-sees-opportunity-amid-the-higher-rates-backdrop"
-                      data-checked="false"
+                    <Link
+                      href={"#"}
                       className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary active:text-primary active:shadow-none  checked:text-primary text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                     >
                       <span>
@@ -62,13 +66,17 @@ const Insights: NextPage = () => {
                         </svg>
                       </span>
                       <span>Read now</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
-              <img
-                src="https://www.ice.com/publicdocs/images/Tile-Data_Tech-512x250-05.jpg"
-                className="w-full object-cover object-center bgImageClass"
+
+              <Image
+                src={harleyBassman}
+                alt="Harley Bassman"
+                width={512}
+                height={250}
+                className="w-full object-cover object-center"
               />
             </div>
           </div>
@@ -94,9 +102,8 @@ const Insights: NextPage = () => {
                 </div>
                 <div>
                   <div className="text-center">
-                    <a
-                      href="https://www.ice.com/insights/rates-and-currencies/dealing-in-divergence"
-                      data-checked="false"
+                    <Link
+                      href="#"
                       className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary    active:text-primary  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                     >
                       <span>
@@ -117,13 +124,16 @@ const Insights: NextPage = () => {
                         </svg>
                       </span>
                       <span>Read now</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
-              <img
-                src="https://www.ice.com/publicdocs/images/Tile-Data_Tech-512x250-02.jpg"
-                className="w-full object-cover object-center bgImageClass"
+              <Image
+                src={dealingInDivergence}
+                alt="Dealing in divergence"
+                width={512}
+                height={250}
+                className="w-full object-cover object-center"
               />
             </div>
           </div>
@@ -140,16 +150,16 @@ const Insights: NextPage = () => {
                   <div className="mt-10">
                     <div className="text-center">
                       <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                        An overview of ICE Sustainable Finance’s geospatial
-                        capabilities
+                        An overview of BlockTech Sustainable Finance’s
+                        geospatial capabilities
                       </p>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div className="text-center">
-                    <a
-                      href="https://www.ice.com/insights/sustainable-finance/linking-municipal-bond-securities-to-their-geospatial-footprints"
+                    <Link
+                      href="#"
                       data-checked="false"
                       className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary    active:text-primary  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                     >
@@ -171,13 +181,16 @@ const Insights: NextPage = () => {
                         </svg>
                       </span>
                       <span>Read now</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
-              <img
-                src="https://www.ice.com/publicdocs/images/Tile-ESG-512x250-05.jpg"
-                className="w-full object-cover object-center bgImageClass"
+              <Image
+                src={linkingMunicipalBondSecurities}
+                alt="Linking municipal"
+                width={512}
+                height={250}
+                className="w-full object-cover object-center"
               />
             </div>
           </div>

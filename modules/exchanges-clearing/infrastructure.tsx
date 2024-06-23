@@ -1,6 +1,9 @@
-import React from "react";
+import { NextPage } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import media from "@/public/images/Hero-Commodities-1920x550-05.jpg";
 
-const Infrastructure = () => {
+const Infrastructure: NextPage = () => {
   return (
     <div className="pb-10 xl:pb-20">
       <div className="pb-0 xl:pb-5">
@@ -23,10 +26,10 @@ const Infrastructure = () => {
         </div>
         <div className="mb-6"></div>
       </div>
-      <div className="flex flex-col items-stretch gap-4 sm:flex-row flex-grow sm:flex-row-reverse">
+      <div className="flex flex-col items-stretch gap-4 flex-grow sm:flex-row-reverse">
         <div className="sm:flex-1 relative overflow-hidden">
-          <img
-            src="https://www.ice.com/publicdocs/images/Hero-Commodities-1920x550-05.jpg"
+          <Image
+            src={media}
             alt="Media"
             className="w-full sm:absolute sm:left-0 sm:top-0 sm:h-full object-cover object-center"
           />
@@ -53,11 +56,11 @@ const Infrastructure = () => {
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/futures-europe"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer text-[#235F73] hover:text-[#235F73] font-bold"
                         >
-                          <span>ICE Futures Europe</span>
+                          <span>BlockTech Futures Europe</span>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -73,46 +76,34 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a
-                          href="/agriculture"
-                          className="label"
-                          title="Agriculture"
-                        >
+                        <Link href="#" className="label">
                           Agriculture
-                        </a>
-                        <a href="/energy" className="label" title="Energy">
+                        </Link>
+                        <Link href="#" className="label">
                           Energy
-                        </a>
-                        <a
-                          href="/single-stock-equity-index"
-                          className="label"
-                          title="Equities"
-                        >
+                        </Link>
+                        <Link href="#" className="label">
                           Equities
-                        </a>
-                        <a
-                          href="/interest-rates"
-                          className="label"
-                          title="Interest Rates"
-                        >
+                        </Link>
+                        <Link href="#" className="label">
                           IR
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/futures-us"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                         >
-                          <span>ICE Futures U.S.</span>
+                          <span>BlockTech Futures U.S.</span>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -128,46 +119,38 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a
-                          href="/agriculture"
-                          className="label"
-                          title="Agriculture"
-                        >
+                        <Link href="#" className="label">
                           Agriculture
-                        </a>
+                        </Link>
 
-                        <a href="/energy" className="label" title="Energy">
+                        <Link href="#" className="label">
                           Energy
-                        </a>
-                        <a
-                          href="/single-stock-equity-index"
-                          className="label"
-                          title="Equities"
-                        >
+                        </Link>
+                        <Link href="#" className="label">
                           Equities
-                        </a>
-                        <a href="/forex" className="label" title="Forex (FX)">
+                        </Link>
+                        <Link href="#" className="label">
                           Forex (FX)
-                        </a>
-                        <a href="/metals" className="label" title="Metals">
+                        </Link>
+                        <Link href="#" className="label">
                           Metals
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/futures-singapore"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                         >
-                          <span>ICE Futures Singapore</span>
+                          <span>BlockTech Futures Singapore</span>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -183,42 +166,34 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a href="/energy" className="label" title="Energy">
+                        <Link href="#" className="label">
                           Energy
-                        </a>
-                        <a
-                          href="/single-stock-equity-index"
-                          className="label"
-                          title="Equities"
-                        >
+                        </Link>
+                        <Link href="#" className="label">
                           Equities
-                        </a>
-                        <a href="/forex" className="label" title="Forex (FX)">
+                        </Link>
+                        <Link href="#" className="label">
                           Forex (FX)
-                        </a>
-                        <a
-                          href="/products/79696475"
-                          className="label"
-                          title="Digital Assets"
-                        >
+                        </Link>
+                        <Link href="#" className="label">
                           Digital Assets
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/futures-abu-dhabi"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                         >
-                          <span>ICE Futures Abu Dhabi</span>
+                          <span>BlockTech Futures Abu Dhabi</span>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -234,25 +209,25 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a href="/energy" className="label" title="Energy">
+                        <Link href="#" className="label">
                           Energy
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/endex"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                         >
-                          <span>ICE Endex</span>
+                          <span>BlockTech Endex</span>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -268,29 +243,25 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a href="/energy" className="label" title="Energy">
+                        <Link href="#" className="label">
                           Energy
-                        </a>
-                        <a
-                          href="/single-stock-equity-index"
-                          className="label"
-                          title="Equities"
-                        >
+                        </Link>
+                        <Link href="#" className="label">
                           Equities
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/service/creditex"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                         >
                           <span>Creditex</span>
@@ -309,26 +280,22 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a
-                          href="/credit-derivatives"
-                          className="label"
-                          title="Credit"
-                        >
+                        <Link href="#" className="label">
                           Credit
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="https://www.nyse.com/index"
+                        <Link
+                          href="#"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
@@ -349,31 +316,30 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a
+                        <Link
                           rel="noopener noreferrer"
-                          href="https://www.nyse.com/index"
+                          href="#"
                           target="_blank"
                           className="label"
-                          title="Listings"
                         >
                           Listings
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/swap-trade"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                         >
-                          <span>ICE Swap Trade</span>
+                          <span>BlockTech Swap Trade</span>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -389,32 +355,28 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a
-                          href="/credit-derivatives"
-                          className="label"
-                          title="Credit"
-                        >
+                        <Link href="#" className="label">
                           Credit
-                        </a>
-                        <a href="/energy" className="label" title="Energy">
+                        </Link>
+                        <Link href="#" className="label">
                           Energy
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/otc-energy"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                         >
-                          <span>ICE OTC Energy</span>
+                          <span>BlockTech OTC Energy</span>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -430,25 +392,25 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a href="/energy" className="label" title="Energy">
+                        <Link href="#" className="label">
                           Energy
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <div>
-                        <a
-                          href="/ngx"
+                        <Link
+                          href="#"
                           className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
                         >
-                          <span>ICE NGX</span>
+                          <span>BlockTech NGX</span>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -464,14 +426,14 @@ const Infrastructure = () => {
                               d="M10.072 8.024L5.715 3.667l.618-.62L11 7.716v.618L6.333 13l-.618-.619 4.357-4.357z"
                             ></path>
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     </td>
                     <td>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <a href="/energy" className="label" title="Energy">
+                        <Link href="#" className="label">
                           Energy
-                        </a>
+                        </Link>
                       </div>
                     </td>
                   </tr>

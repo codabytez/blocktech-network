@@ -1,35 +1,34 @@
-import React from "react";
+import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import commodity from "@/public/images/Hero-Commodities-1920x550-10.jpg";
 
-const GlobalMarket = () => {
+const GlobalMarket: NextPage = () => {
   return (
-    <div id="integration-id-a500e0e" className="flex gap-4 flex-col">
-      <div
-        id="integration-id-346e613"
-        className="flex flex-col items-stretch gap-4 flex-grow sm:flex-row-reverse"
-      >
+    <div className="flex gap-4 flex-col">
+      <div className="flex flex-col items-stretch gap-4 flex-grow sm:flex-row-reverse">
         <div className="sm:flex-1 relative overflow-hidden">
-          <img
-            src="https://www.ice.com/publicdocs/images/Hero-Commodities-1920x550-10.jpg"
+          <Image
+            src={commodity}
             alt="Commodities"
+            width={1920}
+            height={550}
             className="w-full sm:absolute sm:left-0 sm:top-0 sm:h-full object-cover object-center"
           />
         </div>
         <div className="sm:flex-1 overflow-hidden">
-          <div id="integration-id-e00891e" className="pr-5">
-            <div id="integration-id-b25350e" className="">
-              <h3 className="m-0 font-headings border-0 pb-0 mers:border-b-2 mers:border-solid mers:border-secondary mers:pb-2.5 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-2xl md:text-4xl">
-                ICE powers the energy markets with a global market complex
+          <div className="pr-5">
+            <div className="">
+              <h3 className="m-0 font-headings border-0 pb-0 font-medium normal-case leading-none print:break-after-avoid text-2xl md:text-4xl">
+                BlockTech powers the energy markets with a global market complex
               </h3>
               <div className="mb-4"></div>
             </div>
-            <div
-              id="integration-id-f5ba409"
-              className="flex gap-x-4 text-left flex-col md:flex-row"
-            >
+            <div className="flex gap-x-4 text-left flex-col md:flex-row">
               <div className="flex-1">
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/oil"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -57,15 +56,15 @@ const GlobalMarket = () => {
                       Brent crude is the cornerstone of our complex, which
                       includes benchmarks Gasoil, WTI and (Platts) Dubai. Our
                       broad Asian offering sets the standard for Asia-bound
-                      Mideast crude, while ICE Murban Futures will bring
+                      Mideast crude, while BlockTech Murban Futures will bring
                       transparent pricing to a fuel that helps meet regional
                       demand
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/global-natural-gas-futures"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -97,15 +96,15 @@ const GlobalMarket = () => {
                       depth of liquidity, tools and data for your risk
                       management needs
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/energy/environmental"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
-                      <div className="">Environmentals</div>
+                      <div className="">Environmental</div>
                       <div className="flex flex-1 justify-start pl-4">
                         <svg
                           stroke="currentColor"
@@ -126,16 +125,16 @@ const GlobalMarket = () => {
                       </div>
                     </div>
                     <div className="text-[0.75rem] font-light md:text-xs">
-                      ICE has been a leader in environmental markets for nearly
-                      two decades. Today, our environmental markets span Europe
-                      and North America — the world’s most liquid environmental
-                      markets
+                      BlockTech has been a leader in environmental markets for
+                      nearly two decades. Today, our environmental markets span
+                      Europe and North America — the world’s most liquid
+                      environmental markets
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/products/?filter=electricity"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -165,11 +164,11 @@ const GlobalMarket = () => {
                       power contracts, which bring all the benefits of exchange
                       transparency and clearing
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/products/Futures-Options/Energy?filter=coal"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -200,7 +199,7 @@ const GlobalMarket = () => {
                       Africa) as well as the emerging markets of South China and
                       Indonesia
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

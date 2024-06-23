@@ -1,48 +1,25 @@
+import { NextPage } from "next";
 import React from "react";
+import Link from "next/link";
 
-const MarketData = () => {
+const MarketData: NextPage = () => {
   return (
-    <div id="integration-id-cc65350" className="">
+    <div className="">
       <div className="flex min-w-0 w-full border-b-2 border-black">
         <div className="flex flex-1 shrink-0 justify-start overflow-auto items-end gap-x-4">
-          <button
-            type="button"
-            role="tab"
-            aria-selected="true"
-            className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 pl-0 border-b-[12px] border-[#71c5e8] bottom-[2px] text-black hover:border-[#25b4ef] focus:border-[#25b4ef] font-medium grow p-2 pb-4 text-xl"
-          >
+          <button className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 pl-0 border-b-[12px] border-[#71c5e8] bottom-[2px] text-black hover:border-[#25b4ef] focus:border-[#25b4ef] font-medium grow p-2 pb-4 text-xl">
             Energy
           </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 text-gray-700 hover:text-black focus:text-black hover:border-gray-500 focus:border-gray-500 pl-0 border-b-[12px] border-gray-400 bottom-[2px] font-light grow p-2 pb-4 text-xl"
-          >
+          <button className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 text-gray-700 hover:text-black focus:text-black hover:border-gray-500 focus:border-gray-500 pl-0 border-b-[12px] border-gray-400 bottom-[2px] font-light grow p-2 pb-4 text-xl">
             Interest Rates
           </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 text-gray-700 hover:text-black focus:text-black hover:border-gray-500 focus:border-gray-500 pl-0 border-b-[12px] border-gray-400 bottom-[2px] font-light grow p-2 pb-4 text-xl"
-          >
+          <button className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 text-gray-700 hover:text-black focus:text-black hover:border-gray-500 focus:border-gray-500 pl-0 border-b-[12px] border-gray-400 bottom-[2px] font-light grow p-2 pb-4 text-xl">
             Agriculture
           </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 text-gray-700 hover:text-black focus:text-black hover:border-gray-500 focus:border-gray-500 pl-0 border-b-[12px] border-gray-400 bottom-[2px] font-light grow p-2 pb-4 text-xl"
-          >
+          <button className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 text-gray-700 hover:text-black focus:text-black hover:border-gray-500 focus:border-gray-500 pl-0 border-b-[12px] border-gray-400 bottom-[2px] font-light grow p-2 pb-4 text-xl">
             Indices
           </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 text-gray-700 hover:text-black focus:text-black hover:border-gray-500 focus:border-gray-500 pl-0 border-b-[12px] border-gray-400 bottom-[2px] font-light grow p-2 pb-4 text-xl"
-          >
+          <button className="flex flex-nowrap items-center whitespace-nowrap focus:outline-none min-w-max-content max-w-1/6 text-gray-700 hover:text-black focus:text-black hover:border-gray-500 focus:border-gray-500 pl-0 border-b-[12px] border-gray-400 bottom-[2px] font-light grow p-2 pb-4 text-xl">
             CDS
           </button>
         </div>
@@ -50,7 +27,7 @@ const MarketData = () => {
       <div className="">
         <div>
           <div className="">
-            <div data-rich-text-ignore="true" className="overflow-x-auto">
+            <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr>
@@ -67,22 +44,22 @@ const MarketData = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="cursor-pointer hover:bg-gray" data-index="0">
+                  <tr className="cursor-pointer hover:bg-gray">
                     <th className="border-t border-[#B5B5B5] text-left p-3.5">
-                      <a
-                        href="/products/213"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
-                        ICE WTI
-                      </a>
+                        BlockTech WTI
+                      </Link>
                     </th>
                     <td className="hidden sm:table-cell">
-                      <a
-                        href="/products/213"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         T
-                      </a>
+                      </Link>
                     </td>
                     <td>Jul 24</td>
                     <td>78.090</td>
@@ -129,22 +106,22 @@ const MarketData = () => {
                       </svg>
                     </td>
                   </tr>
-                  <tr className="cursor-pointer hover:bg-gray" data-index="1">
+                  <tr className="cursor-pointer hover:bg-gray">
                     <th className="border-t border-[#B5B5B5] text-left p-3.5">
-                      <a
-                        href="/products/34361119"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         LS Gasoil
-                      </a>
+                      </Link>
                     </th>
                     <td className="hidden sm:table-cell">
-                      <a
-                        href="/products/34361119"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         G
-                      </a>
+                      </Link>
                     </td>
                     <td>Jul 24</td>
                     <td>758.250</td>
@@ -191,22 +168,22 @@ const MarketData = () => {
                       </svg>
                     </td>
                   </tr>
-                  <tr className="cursor-pointer hover:bg-gray" data-index="2">
+                  <tr className="cursor-pointer hover:bg-gray">
                     <th className="border-t border-[#B5B5B5] text-left p-3.5">
-                      <a
-                        href="/products/910"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         UK Nat Gas
-                      </a>
+                      </Link>
                     </th>
                     <td className="hidden sm:table-cell">
-                      <a
-                        href="/products/910"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         M
-                      </a>
+                      </Link>
                     </td>
                     <td>Jul 24</td>
                     <td>83.750</td>
@@ -253,22 +230,22 @@ const MarketData = () => {
                       </svg>
                     </td>
                   </tr>
-                  <tr className="cursor-pointer hover:bg-gray" data-index="3">
+                  <tr className="cursor-pointer hover:bg-gray">
                     <th className="border-t border-[#B5B5B5] text-left p-3.5">
-                      <a
-                        href="/products/197"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
-                        ICE EUA
-                      </a>
+                        BlockTech EUA
+                      </Link>
                     </th>
                     <td className="hidden sm:table-cell">
-                      <a
-                        href="/products/197"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         C
-                      </a>
+                      </Link>
                     </td>
                     <td>Dec 24</td>
                     <td>68.960</td>
@@ -315,22 +292,22 @@ const MarketData = () => {
                       </svg>
                     </td>
                   </tr>
-                  <tr className="cursor-pointer hover:bg-gray" data-index="4">
+                  <tr className="cursor-pointer hover:bg-gray">
                     <th className="border-t border-[#B5B5B5] text-left p-3.5">
-                      <a
-                        href="/products/6590258"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
-                        ICE Henry
-                      </a>
+                        BlockTech Henry
+                      </Link>
                     </th>
                     <td className="hidden sm:table-cell">
-                      <a
-                        href="/products/6590258"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         H
-                      </a>
+                      </Link>
                     </td>
                     <td>Jul 24</td>
                     <td>2.795</td>
@@ -377,22 +354,22 @@ const MarketData = () => {
                       </svg>
                     </td>
                   </tr>
-                  <tr className="cursor-pointer hover:bg-gray" data-index="5">
+                  <tr className="cursor-pointer hover:bg-gray">
                     <th className="border-t border-[#B5B5B5] text-left p-3.5">
-                      <a
-                        href="/products/27996665"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         TTF Gas
-                      </a>
+                      </Link>
                     </th>
                     <td className="hidden sm:table-cell">
-                      <a
-                        href="/products/27996665"
+                      <Link
+                        href="#"
                         className="text-black hover:text-black hover:no-underline"
                       >
                         TFM
-                      </a>
+                      </Link>
                     </td>
                     <td>Jul 24</td>
                     <td>35.575</td>
@@ -450,313 +427,15 @@ const MarketData = () => {
           </p>
         </div>
         <div className="text-right">
-          <a
-            href="/products"
+          <Link
+            href="#"
             className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
           >
             <span>Search All Products</span>
-          </a>
+          </Link>
         </div>
       </div>
-      <div className="hidden">
-        <div>
-          <div className="tile-fill-width">
-            <div style={{ minHeight: "244px" }}>
-              <div className="flex flex-1 flex-col items-center justify-center duration-300 opacity-50">
-                <svg
-                  viewBox="0 0 66 66"
-                  className="w-full max-w-20"
-                  role="progressbar"
-                  data-testid="spinner"
-                  aria-label="Loading contracts..."
-                  aria-busy="true"
-                  aria-live="polite"
-                >
-                  <g>
-                    <g>
-                      <circle
-                        fill="none"
-                        strokeWidth="6"
-                        strokeLinecap="round"
-                        cx="33"
-                        cy="33"
-                        r="30"
-                        strokeDasharray="187"
-                        strokeDashoffset="0"
-                        stroke="currentColor"
-                      >
-                        <animate
-                          attributeName="stroke-dashoffset"
-                          values="187;46.75;187"
-                          dur="1.4s"
-                          repeatCount="indefinite"
-                        ></animate>
-                        <animateTransform
-                          attributeName="transform"
-                          attributeType="XML"
-                          type="rotate"
-                          values="0 0 0;135 0 0;450 0 0"
-                          dur="1.4s"
-                          repeatCount="indefinite"
-                        ></animateTransform>
-                      </circle>
-                    </g>
-                    <animateTransform
-                      attributeName="transform"
-                      attributeType="XML"
-                      type="rotate"
-                      from="0 33 33"
-                      to="270 33 33"
-                      dur="1.4s"
-                      repeatCount="indefinite"
-                    ></animateTransform>
-                  </g>
-                  <g className="duration-300">
-                    <path
-                      strokeWidth="6"
-                      stroke="currentColor"
-                      d="M33,10 L33,40 M33,45 L33,55"
-                    ></path>
-                  </g>
-                </svg>
-                <div className="shrink overflow-hidden px-4 text-center">
-                  Still working...
-                </div>
-              </div>
-            </div>
-          </div>
-          <p>
-            <span className="text-xs font-light leading-none text-gray-700">
-              Market data delayed 15 mins.
-            </span>
-          </p>
-        </div>
-        <div className="text-right">
-          <a
-            href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
-          >
-            <span>Search All Products</span>
-          </a>
-        </div>
-      </div>
-      <div className="hidden">
-        <div>
-          <div className="tile-fill-width">
-            <div style={{ minHeight: "244px" }}>
-              <div className="flex flex-1 flex-col items-center justify-center duration-300 opacity-50">
-                <svg
-                  viewBox="0 0 66 66"
-                  className="w-full max-w-20"
-                  role="progressbar"
-                  aria-label="Loading contracts..."
-                  aria-busy="true"
-                  aria-live="polite"
-                >
-                  <g>
-                    <g>
-                      <circle
-                        fill="none"
-                        strokeWidth="6"
-                        strokeLinecap="round"
-                        cx="33"
-                        cy="33"
-                        r="30"
-                        strokeDasharray="187"
-                        strokeDashoffset="0"
-                        stroke="currentColor"
-                      >
-                        <animate
-                          attributeName="stroke-dashoffset"
-                          values="187;46.75;187"
-                          dur="1.4s"
-                          repeatCount="indefinite"
-                        ></animate>
-                        <animateTransform
-                          attributeName="transform"
-                          attributeType="XML"
-                          type="rotate"
-                          values="0 0 0;135 0 0;450 0 0"
-                          dur="1.4s"
-                          repeatCount="indefinite"
-                        ></animateTransform>
-                      </circle>
-                    </g>
-                    <animateTransform
-                      attributeName="transform"
-                      attributeType="XML"
-                      type="rotate"
-                      from="0 33 33"
-                      to="270 33 33"
-                      dur="1.4s"
-                      repeatCount="indefinite"
-                    ></animateTransform>
-                  </g>
-                  <g className="duration-300">
-                    <path
-                      strokeWidth="6"
-                      stroke="currentColor"
-                      d="M33,10 L33,40 M33,45 L33,55"
-                    ></path>
-                  </g>
-                </svg>
-                <div className="shrink overflow-hidden px-4 text-center">
-                  Still working...
-                </div>
-              </div>
-            </div>
-          </div>
-          <p>
-            <span className="text-xs font-light leading-none text-gray-700">
-              Market data delayed 15 mins.
-            </span>
-          </p>
-        </div>
-        <div className="text-right">
-          <a
-            href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
-          >
-            <span>Search All Products</span>
-          </a>
-        </div>
-      </div>
-      <div className="hidden">
-        <div>
-          <div className="tile-fill-width">
-            <div style={{ minHeight: "244px" }}>
-              <div className="flex flex-1 flex-col items-center justify-center duration-300 opacity-50">
-                <svg
-                  viewBox="0 0 66 66"
-                  className="w-full max-w-20"
-                  role="progressbar"
-                  data-testid="spinner"
-                  aria-label="Loading contracts..."
-                  aria-busy="true"
-                  aria-live="polite"
-                >
-                  <g>
-                    <g>
-                      <circle
-                        fill="none"
-                        strokeWidth="6"
-                        strokeLinecap="round"
-                        cx="33"
-                        cy="33"
-                        r="30"
-                        strokeDasharray="187"
-                        strokeDashoffset="0"
-                        stroke="currentColor"
-                      >
-                        <animate
-                          attributeName="stroke-dashoffset"
-                          values="187;46.75;187"
-                          dur="1.4s"
-                          repeatCount="indefinite"
-                        ></animate>
-                        <animateTransform
-                          attributeName="transform"
-                          attributeType="XML"
-                          type="rotate"
-                          values="0 0 0;135 0 0;450 0 0"
-                          dur="1.4s"
-                          repeatCount="indefinite"
-                        ></animateTransform>
-                      </circle>
-                    </g>
-                    <animateTransform
-                      attributeName="transform"
-                      attributeType="XML"
-                      type="rotate"
-                      from="0 33 33"
-                      to="270 33 33"
-                      dur="1.4s"
-                      repeatCount="indefinite"
-                    ></animateTransform>
-                  </g>
-                  <g className="duration-300">
-                    <path
-                      strokeWidth="6"
-                      stroke="currentColor"
-                      d="M33,10 L33,40 M33,45 L33,55"
-                    ></path>
-                  </g>
-                </svg>
-                <div className="shrink overflow-hidden px-4 text-center">
-                  Still working...
-                </div>
-              </div>
-            </div>
-          </div>
-          <p>
-            <span className="text-xs font-light leading-none text-gray-700">
-              Market data delayed 15 mins.
-            </span>
-          </p>
-        </div>
-        <div className="text-right">
-          <a
-            href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer text-[#235F73] hover:text-[#235F73] font-bold"
-          >
-            <span>Search All Products</span>
-          </a>
-        </div>
-      </div>
-      <div className="hidden">
-        <div data-rich-text-ignore="true" className="overflow-x-auto">
-          <table className="table-stats">
-            <thead>
-              <tr>
-                <td>Instrument</td>
-                <td>EOD Price</td>
-                <td>Date</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>CDX-EMS36V1-5Y</td>
-                <td>94.8756</td>
-                <td>2022-01-28</td>
-              </tr>
-              <tr>
-                <td>CDX-NAHYS37V1-5Y</td>
-                <td>106.6321</td>
-                <td>2022-01-28</td>
-              </tr>
-              <tr>
-                <td>CDX-NAIGS37V1-5Y</td>
-                <td>101.8083</td>
-                <td>2022-01-28</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div className="flex justify-between gap-4 text-xs">
-          <div className="flex-1">
-            <a href="/publicdocs/Markit_ICE_Settlement_Pricing_Terms_of_Use.pdf">
-              Markit ICE Settlement Prices Terms of Use
-            </a>
-          </div>
-          <div className="flex-1 text-right">
-            <a href="/cds/MarkitSingleNames.shtml">View Additional Details</a>
-          </div>
-        </div>
-        <div className="text-xs">
-          <p>
-            ICE publishes its daily settlement prices on select indices and
-            5-year single name CDS instruments.
-          </p>
-        </div>
-        <div className="text-right">
-          <a
-            href="/products"
-            className="inline-flex items-center no-underline hover:underline cursor-pointer print:text-black print:underline text-[#235F73] hover:text-[#235F73] font-bold"
-          >
-            <span>Search All Products</span>
-          </a>
-        </div>
-      </div>
+
       <div className="h-16"></div>
     </div>
   );

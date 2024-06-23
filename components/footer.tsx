@@ -1,6 +1,8 @@
-import React from "react";
+import Image from "next/image";
+import logo from "@/public/logo/Logo-01.png";
+import { NextPage } from "next";
 
-const Footer: React.FC = () => {
+const Footer: NextPage = () => {
   return (
     <div>
       <div className="contents ice">
@@ -8,51 +10,18 @@ const Footer: React.FC = () => {
           <footer>
             <div className="flex flex-col items-center justify-center gap-10 pb-8 sm:flex-row sm:items-start sm:gap-16">
               <a href="/">
-                <svg
-                  role="img"
-                  viewBox="0 0 79 80"
-                  width="100"
-                  className="inline-block"
-                >
-                  <title>ICE Logo</title>
-                  <g
-                    stroke="none"
-                    strokeWidth="1"
-                    fill="none"
-                    fillRule="evenodd"
-                  >
-                    <g transform="translate(-60.000000, -79.000000)">
-                      <g transform="translate(60.000000, 79.000000)">
-                        <polygon
-                          className="text-ice-blue fill-current"
-                          points="0 0 0 79 15.3877027 79 15.3877027 71.781459 7.2168718 71.781459 7.2168718 7.2168718 71.781459 7.2168718 71.781459 47.0749194 79 47.0749194 79 0"
-                        ></polygon>
-                        <polygon
-                          className="text-black fill-current"
-                          points="23 79 28 79 28 55 23 55"
-                        ></polygon>
-                        <g transform="translate(32.000000, 55.000000)">
-                          <path
-                            d="M12.4628433,20.5567292 C8.16176588,20.5567292 5.08320506,17.2362315 5.08320506,12.4997921 C5.08320506,7.76335268 7.86914443,4.39461734 12.3650254,4.39461734 C15.0044459,4.39461734 17.2038936,5.6641827 18.6703308,7.71511502 L21.994061,4.44327085 C19.4033413,1.41594172 16.1287283,0 12.2676236,0 C5.32754189,0 0,5.4200835 0,12.4997921 C0,19.5799165 4.88715285,25 12.4628433,25 C16.5687011,25 19.8433141,23.2422362 22.1892807,20.1658378 L18.7190317,17.2362315 C17.2038936,19.3358173 15.1022639,20.5567292 12.4628433,20.5567292"
-                            className="text-black fill-current"
-                          ></path>
-                          <g transform="translate(23.948922, 0.000083)">
-                            <path
-                              d="M5.29965336,14.5993779 C6.07012606,18.1885095 8.83109062,20.5567292 12.4628433,20.5567292 C15.1022639,20.5567292 17.2038936,19.3358173 18.7190317,17.2362315 L22.1892807,20.1658378 C19.8433141,23.2418204 16.5691173,24.9995842 12.4628433,24.9995842 C4.8875691,24.9995842 0,19.5795007 0,12.4997921 C0,5.41966766 4.84885816,0 11.7889399,0 C16.988694,0 24.0994369,3.61824049 22.9218749,14.5993779 L5.29965336,14.5993779 Z M18.2082969,10.7420283 C17.6767499,5.86461851 14.5178534,4.3942015 12.3658578,4.3942015 C8.7124603,4.3942015 6.06762858,6.68549044 5.21973399,10.7420283 L18.2082969,10.7420283 Z"
-                              className="text-black fill-current"
-                            ></path>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                <Image
+                  src={logo}
+                  alt="BlockTech Logo"
+                  width={100}
+                  height={100}
+                />
               </a>
               <div className="sm:hidden">
                 <ul className="m-0 flex list-none justify-center gap-4 p-0">
                   <li>
                     <a
-                      href="https://www.twitter.com/ICE_Markets"
+                      href="https://www.twitter.com/BlockTech_Markets"
                       title="Twitter"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -221,7 +190,7 @@ const Footer: React.FC = () => {
                           href="/contact"
                           className="text-current no-underline hover:underline text-base"
                         >
-                          ICE Data Services Support
+                          BlockTech Data Services Support
                         </a>
                       </li>
                       <li>
@@ -229,7 +198,7 @@ const Footer: React.FC = () => {
                           href="/support/education"
                           className="text-current no-underline hover:underline text-base"
                         >
-                          ICE Education
+                          BlockTech Education
                         </a>
                       </li>
                       <li>
@@ -239,7 +208,7 @@ const Footer: React.FC = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          ICE Developer Portal
+                          BlockTech Developer Portal
                         </a>
                       </li>
                     </ul>
@@ -290,7 +259,7 @@ const Footer: React.FC = () => {
                           href="/events"
                           className="text-current no-underline hover:underline text-base"
                         >
-                          ICE Events
+                          BlockTech Events
                         </a>
                       </li>
                       <li>
@@ -353,7 +322,7 @@ const Footer: React.FC = () => {
               <ul className="m-0 flex list-none justify-center gap-4 p-0">
                 <li>
                   <a
-                    href="https://www.twitter.com/ICE_Markets"
+                    href="https://www.twitter.com/BlockTech_Markets"
                     title="Twitter"
                     target="_blank"
                     rel="noopener noreferrer"

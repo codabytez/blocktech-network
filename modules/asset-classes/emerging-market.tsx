@@ -1,22 +1,24 @@
-import React from "react";
+import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import commodities from "@/public/images/Hero-Data_Tech-1920x550-02.jpg";
 
-const EmergingMarket = () => {
+const EmergingMarket: NextPage = () => {
   return (
-    <div id="integration-id-d5303f9" className="flex gap-4 flex-col">
-      <div
-        id="integration-id-9dfe6ec"
-        className="flex flex-col items-stretch gap-4 sm:flex-row flex-grow"
-      >
+    <div className="flex gap-4 flex-col">
+      <div className="flex flex-col items-stretch gap-4 sm:flex-row flex-grow">
         <div className="sm:flex-1 relative overflow-hidden">
-          <img
-            src="https://www.ice.com/publicdocs/images/Hero-Data_Tech-1920x550-02.jpg"
+          <Image
+            src={commodities}
             alt="Commodities"
+            width={1920}
+            height={550}
             className="w-full sm:absolute sm:left-0 sm:top-0 sm:h-full object-cover object-center"
           />
         </div>
         <div className="sm:flex-1 overflow-hidden">
-          <div id="integration-id-626c0f6" className="pr-5 pb-20">
-            <div id="integration-id-6152c9e" className="">
+          <div className="pr-5 pb-20">
+            <div className="">
               <h3 className="m-0 font-headings border-0 pb-0 mers:border-b-2 mers:border-solid mers:border-secondary mers:pb-2.5 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-xl md:text-3xl">
                 Trade more than 60 FX contracts including the world’s most
                 heavily traded majors, cross rates and emerging markets currency
@@ -24,14 +26,11 @@ const EmergingMarket = () => {
               </h3>
             </div>
             <div className="h-4"></div>
-            <div
-              id="integration-id-d2cf844"
-              className="flex gap-x-4 text-left flex-col md:flex-row"
-            >
+            <div className="flex gap-x-4 text-left flex-col md:flex-row">
               <div className="flex-1">
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/products/Futures-Options/FX/Cross-Rates"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -60,11 +59,11 @@ const EmergingMarket = () => {
                       three major non-U.S. dollar currencies; the Euro, the UK
                       pound and the Yen
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/products/Futures-Options/FX/Emerging-Markets"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -95,11 +94,11 @@ const EmergingMarket = () => {
                       shekel, Mexican peso, Polish zloty, Russian ruble and
                       Turkish lira
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/products/Futures-Options/FX/Majors"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -128,11 +127,11 @@ const EmergingMarket = () => {
                       including the five most liquid and widely traded pairs in
                       the world: EUR/USD, USD/JPY, GBP/USD, USD/CAN and USD/CHF
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex py-2 border-t first:border-t-0 md:first:border-t-0 border-black">
-                  <a
-                    href="/products/194/US-Dollar-Index-Futures"
+                  <Link
+                    href="#"
                     className="flex w-full flex-col hover:no-underline text-black"
                   >
                     <div className="flex flex-1 flex-row items-center justify-between text-[0.95rem] md:text-base">
@@ -161,7 +160,7 @@ const EmergingMarket = () => {
                       U.S. dollar and the world’s most widely-recognized traded
                       currency index
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

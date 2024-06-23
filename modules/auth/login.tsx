@@ -1,110 +1,293 @@
 import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import webICE from "@/public/images/WebICE-White-64px.png";
+import chat from "@/public/images/Chat-White-64px.png";
+import connect from "@/public/images/ICE-Connect_Icon_Border-64x64.png";
+import options from "@/public/images/Options_Analytics-White-64px.png";
+import block from "@/public/images/Block-White-64px.png";
+import positions from "@/public/images/Positions-White-64px.png";
+import ICEHub from "@/public/images/ETFHub-White-64px.png";
+import quoteBoard from "@/public/images/QuoteBoard-White-64px.png";
 
 const Login: NextPage = () => {
   return (
-    <section
-      className="w-full min-h-screen relative bg-[#003049] py-20 text-base"
-      style={{
-        backgroundImage: "url(https://matston.com/en/loginimge.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="text-center">
-        <a href="https://matston.com/en">
-          <img
-            src="https://matston.com/en/assets/global/images/UNOu81RsuLkC74Z1QyLH.png"
-            alt="logo"
-            className="w-[350px] h-[40px] inline-block"
-          />
-        </a>
-      </div>
-      <br />
+    <div className="bg-white relative z-10 w-full py-6 px-[4%] mx-auto">
+      <div className="min-h-[79vh]">
+        <div className="py-5 px-10 shadow md:w-3/5 lg:w-5/12 mx-auto">
+          <div className="float-right">
+            <Link href="#" className="text-sm text-primary">
+              2FA/Passcode Help
+            </Link>
+          </div>
+          <h1 className="text-3xl pb-2">Login</h1>
+          <div>
+            <div className="relative mb-5 w-full text-left">
+              <hr className="border-t my-4 border-[#d2d4d3]" />
+              <span className="absolute -top-2.5 text-[#818078] bg-white pr-2.5 font-bold text-sm">
+                Blocktech Connect Apps
+              </span>
+            </div>
 
-      <div className="sm:w-[95%] px-3 mx-auto">
-        <div className="flex justify-center flex-wrap">
-          <div className="w-full lg:w-2/3 xl:w-5/12 flex-[0_0_auto] max-w-[720px] lg:max-w-[550px] px-3">
-            <div className="mb-8 rounded-2xl relative z-[1] py-10 px-4 sm:px-16 bg-[#FFFFFF78]">
-              <div className="mt-12">
-                <form>
-                  <input
-                    type="hidden"
-                    name="_token"
-                    value="PWWH1oNKL89o1A95kUYdVbS7429SH7Hs8LKen3vv"
-                  />
-
-                  <div className="mb-5">
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-[#001219cc] mb-1"
+            <div className="-mx-5">
+              <div className="mb-1 md:w-full px-6">
+                <div className="flex flex-nowrap justify-around">
+                  <Link
+                    href="#"
+                    className="icon-link"
+                    style={{ margin: "0.2em" }}
+                  >
+                    <Image src={webICE} alt="WebICE" width={48} height={48} />
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px" }}
                     >
-                      Email Or Username
+                      WebBlocktech
+                    </div>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="icon-link"
+                    style={{ margin: "0.2em" }}
+                  >
+                    <Image src={chat} alt="Chat" width={48} height={48} />
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px" }}
+                    >
+                      Chat
+                    </div>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="icon-link"
+                    style={{ margin: "0.2em" }}
+                  >
+                    <Image src={connect} alt="Connect" width={48} height={48} />
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px" }}
+                    >
+                      Connect
+                    </div>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="icon-link"
+                    style={{ margin: "0.2em" }}
+                  >
+                    <Image src={options} alt="Options" width={48} height={48} />
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px" }}
+                    >
+                      Options
+                    </div>
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px", marginTop: "-0.6em" }}
+                    >
+                      Analytics
+                    </div>
+                  </Link>
+                </div>
+                <div className="flex flex-nowrap justify-around">
+                  <Link
+                    href="#"
+                    className="icon-link"
+                    style={{ margin: "0.2em" }}
+                  >
+                    <Image src={block} alt="Block" width={48} height={48} />
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px" }}
+                    >
+                      Block
+                    </div>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="icon-link"
+                    style={{ margin: "0.2em" }}
+                  >
+                    <Image
+                      src={positions}
+                      alt="Positions"
+                      width={48}
+                      height={48}
+                    />
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px" }}
+                    >
+                      Positions
+                    </div>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="icon-link"
+                    style={{ margin: "0.2em" }}
+                  >
+                    <Image src={ICEHub} alt="ETFHub" width={48} height={48} />
+
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px" }}
+                    >
+                      Blocktech
+                    </div>
+                  </Link>
+                  <Link
+                    href="#"
+                    className="icon-link"
+                    style={{ margin: "0.2em" }}
+                  >
+                    <Image
+                      src={quoteBoard}
+                      alt="QuoteBoard"
+                      width={48}
+                      height={48}
+                    />
+                    <div
+                      className="icon-link-label"
+                      style={{ fontSize: "10px" }}
+                    >
+                      Quote Board
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative mb-5 w-full text-left">
+              <hr className="border-t my-4 border-[#d2d4d3]" />
+              <span className="absolute -top-2.5 text-[#818078] bg-white pr-2.5 font-bold text-sm">
+                Other Blocktech Apps
+              </span>
+            </div>
+
+            <p className="text-xs mb-6">
+              To access additional applications - please enter your User
+              ID/Password and click Login. You will then see the applications
+              you have access to. Click on icon to access the application.
+            </p>
+          </div>
+
+          <div>
+            <form className="mb-6">
+              <div>
+                <div className="-mx-5">
+                  <div className="mb-1 md:w-full">
+                    <label
+                      htmlFor="user"
+                      className="text-xs text-[#808080] font-bold"
+                    >
+                      User ID
                     </label>
                     <input
-                      className="w-full h-12 rounded indent-1 bg-white transition-all duration-300 relative border border-[#CDD4E7]"
+                      className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
                       type="text"
-                      name="email"
-                      placeholder="Enter your email address or username"
-                      required
+                      name="user"
+                      value=""
                     />
                   </div>
-                  <div className="mb-5">
+
+                  <div className="mb-1 md:w-full">
                     <label
                       htmlFor="password"
-                      className="block text-sm font-medium text-[#001219cc] mb-1"
+                      className="text-xs text-[#808080] font-bold"
                     >
                       Password
                     </label>
                     <input
-                      className="w-full h-12 rounded indent-1 bg-white transition-all duration-300 relative border border-[#CDD4E7]"
-                      type="password"
+                      className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
+                      type="text"
                       name="password"
-                      placeholder="Enter your password"
-                      required
+                      value=""
                     />
                   </div>
-                  <div className="mb-5 flex justify-between items-center">
-                    <div className="flex items-center">
-                      <input
-                        className="mr-1 border border-[#CDD4E7] h-6 w-6 mt-0.5 rounded bg-white"
-                        type="checkbox"
-                        name="remember"
-                        id="flexCheckDefault"
-                      />
-                      <label
-                        className="inline-block"
-                        htmlFor="flexCheckDefault"
-                      >
-                        Remember me
-                      </label>
-                    </div>
-                    <span>
-                      <a href="https://matston.com/en/forgot-password">
-                        Forget Password
-                      </a>
-                    </span>
+                </div>
+
+                <div className="-mx-5 mb-2">
+                  <div className="mb-1 md:w-full">
+                    <label className="text-xs text-[#808080]">
+                      <input name="remember_me" type="checkbox" />
+                      Remember User ID
+                    </label>
                   </div>
+                </div>
 
-                  <button className="mb-5 bg-[#0DC9C9] text-white py-3 px-7 rounded-[50px] font-medium text-sm uppercase shadow-sm w-full">
-                    Account Login
-                  </button>
-                </form>
-
-                <p className="text-center">
-                  Not a member of Matston?{" "}
-                  <a
-                    className="text-[#0dc9c9]"
-                    href="https://matston.com/en/register"
-                  >
-                    Start Staking
-                  </a>{" "}
-                </p>
+                <div className="pb-3 w-full">
+                  <div className="-mx-5 flex justify-between">
+                    <div className="w-1/3 px-4">
+                      <div>
+                        <div className="pb-0.5 leading-none">
+                          <Link href="#" className="text-xs text-[#8DC7E9]">
+                            Change Password
+                          </Link>
+                        </div>
+                        <div
+                          id="loginPageForgotPassword"
+                          className="pb-0.5 leading-none"
+                        >
+                          <Link href="#" className="text-xs text-[#8DC7E9]">
+                            Forgot/Reset Password
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-2/3 px-4 float-right">
+                      <div className="-mx-5">
+                        <div className="mb-1 w-full relative px-5">
+                          <div className="float-right">
+                            <button
+                              type="submit"
+                              className="bg-[#231f20] py-2 px-3 border-2 text-center text-sm text-white"
+                              name="loginPageSubmitBtn"
+                            >
+                              Login
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </form>
+
+            <div>
+              <br />
+              <p className="text-xs mb-6">
+                To access Blocktech Data Services{" "}
+                <Link href="#" className="text-[#8DC7E9]">
+                  Click here
+                </Link>
+              </p>
             </div>
+
+            <br />
+            <p className="text-xs text-[#B00017]">
+              Blocktech Applications require Blocktech WebStart to run. Please
+              download and install Blocktech WebStart from{" "}
+              <Link href="#" className="text-[#8DC7E9]">
+                here
+              </Link>{" "}
+              before attempting to launch the app.
+            </p>
+
+            <br />
+
+            <p style={{ fontSize: "12px", marginBottom: "0.1em" }}>
+              24 hour trading and technical support{" "}
+              <Link href="#" className="text-[#8DC7E9]">
+                Contact Us
+              </Link>
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

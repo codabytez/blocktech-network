@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import connection from "@/public/images/Make_the_Connection_Tagline_blk_rgb.png";
 import exchanges from "@/public/images/Tile-General-512x250-03.jpg";
-import fixedIncome from "@/public/images/Tile-Data_Tech-512x250-02.jpg";
-import trading from "@/public/images/Tile-Data_Tech-512x250-05.jpg";
+import trading from "@/public/images/Tile-Data_Tech-512x250-02.jpg";
+import fixedIncome from "@/public/images/Tile-Data_Tech-512x250-05.jpg";
 import staking from "@/public/images/Hero-Data_Tech-1920x550-15.jpg";
 
 const About: NextPage = () => {
@@ -197,14 +197,14 @@ const About: NextPage = () => {
                             <div className="text-center">
                               <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
                                 <span className="font-bold">
-                                  Automating the industry
+                                  Trade Top Cryptocurrencies
                                 </span>
                               </p>
                             </div>
                             <div className="text-center">
                               <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                                We’re digitizing the entire mortgage process to
-                                reduce costs and increase efficiencies.
+                                Bitcoin, Ethereum, Ripple and other crypto
+                                assets at your disposal.
                               </p>
                             </div>
                           </div>
@@ -268,14 +268,16 @@ const About: NextPage = () => {
                             <div className="text-center">
                               <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
                                 <span className="font-bold">
-                                  Creating a new standard
+                                  Automating private pools
                                 </span>
                               </p>
                             </div>
                             <div className="text-center">
                               <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                                We’re digitizing the entire mortgage process to
-                                reduce costs and increase efficiencies.
+                                Putting up coins on a proof of stake blockchain.
+                                Proof of stake blockchain are really different
+                                from the first Gen type of blockchain which
+                                is proof of work.
                               </p>
                             </div>
                           </div>

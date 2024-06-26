@@ -1,7 +1,6 @@
+import MortgageTechnology from "@/components/mortgage-technology";
 import React from "react";
 
-const MortgageTechnologyPage = () => {
-  return <div>MortgageTechnologyPage</div>;
-};
+const MortgageTechnologyPage = () => <MortgageTechnology />;
 
 export default MortgageTechnologyPage;

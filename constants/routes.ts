@@ -7,6 +7,8 @@ export const ROUTES = {
   SUSTAINABLE_FINANCE: "/sustainable-finance",
   MORTGAGE_TECHNOLOGY: "/mortgage-technology",
   INSIGHTS: "/insights",
+  DASHBOARD: "/dashboard",
+  STAKING: "/staking",
   LOGIN: "/login",
   SIGNUP: "/signup",
 };

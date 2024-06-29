@@ -1,13 +1,16 @@
-"use client";
 import { NextPage } from "next";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ROUTES } from "@/constants/routes";
 
-const Sidebar: NextPage = () => {
+const Sidebar: NextPage<{isOpen:boolean}> = ({ isOpen }) => {
   const pathname = usePathname();
   return (
-    <div className="bg-[#bee3db] w-[400px] z-50 fixed top-[70px] bottom-0">
+    <div
+      className={`bg-[#bee3db] w-[400px] z-50 fixed top-[70px] bottom-0 transition-all duration-300 ${
+        isOpen ? "left-0" : "-left-[400px]"
+      }`}
+    >
       <div className="p-5 shadow-sm bg-[#BEE3DB]">
         <div
           className="p-4 mb-2.5 rounded relative"

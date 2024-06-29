@@ -3,7 +3,7 @@ import { NextPage } from "next";
 const UserCards: NextPage = () => {
   return (
     <div className="mb-5 gap-6 flex flex-wrap -mx-3">
-      <div className="w-full max-w-full px-3 flex-[0_0_auto] sm:w-1/2 xl:w-1/4">
+      <div className="w-full max-w-full px-3 flex-[0_0_auto] sm:w-[48%] xl:w-[23%]">
         <div className="bg-[#011B34] py-5 px-4 rounded-lg mb-8 relative flex justify-start">
           <div className="absolute h-16 w-16 rounded-full bg-[#ffc30080] -right-6 -top-6" />
           <div className="rounded-full text-2xl h-11 w-11 text-center bg-white text-[#535A94] mr-4">
@@ -18,7 +18,7 @@ const UserCards: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-full px-3 flex-[0_0_auto] sm:w-1/2 xl:w-1/4">
+      <div className="w-full max-w-full px-3 flex-[0_0_auto] sm:w-[48%] xl:w-[23%]">
         <div className="bg-[#011B34] py-5 px-4 rounded-lg mb-8 relative flex justify-start">
           <div className="absolute h-16 w-16 rounded-full bg-[#ffc30080] -right-6 -top-6" />
           <div className="rounded-full text-2xl h-11 w-11 text-center bg-white text-[#535A94] mr-4">
@@ -33,7 +33,7 @@ const UserCards: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-full px-3 flex-[0_0_auto] sm:w-1/2 xl:w-1/4">
+      <div className="w-full max-w-full px-3 flex-[0_0_auto] sm:w-[48%] xl:w-[23%]">
         <div className="bg-[#011B34] py-5 px-4 rounded-lg mb-8 relative flex justify-start">
           <div className="absolute h-16 w-16 rounded-full bg-[#ffc30080] -right-6 -top-6" />
           <div className="rounded-full text-2xl h-11 w-11 text-center bg-white text-[#535A94] mr-4">
@@ -49,7 +49,7 @@ const UserCards: NextPage = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-full px-3 flex-[0_0_auto] sm:w-1/2 xl:w-1/4">
+      <div className="w-full max-w-full px-3 flex-[0_0_auto] sm:w-[48%] xl:w-[23%]">
         <div className="bg-[#011B34] py-5 px-4 rounded-lg mb-8 relative flex justify-start">
           <div className="absolute h-16 w-16 rounded-full bg-[#ffc30080] -right-6 -top-6" />
           <div className="rounded-full text-2xl h-11 w-11 text-center bg-white text-[#535A94] mr-4">

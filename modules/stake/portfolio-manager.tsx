@@ -13,10 +13,10 @@ const PortfolioManager: NextPage = () => {
       <div className="py-24">
         <div className="container max-w-[1140px] w-full px-2 mx-auto">
           <h2 className="mb-10 font-light relative pt-4 text-[#202020] text-center text-3xl">
-            Our promise to Matston portfolio managers
+            Our promise to BlockTech portfolio managers
           </h2>
           <p className="text-center mb-12 font-light">
-            Matston was born to rebalance the forces of the market and for that
+            BlockTech was born to rebalance the forces of the market and for that
             reason we want to create an aligned incentive system fair to all.
           </p>
           <div className="my-4 mx-auto sm:flex items-start flex-wrap justify-center lg:justify-between">
@@ -33,9 +33,9 @@ const PortfolioManager: NextPage = () => {
                   No hidden commissions
                 </h3>
                 <p className="font-light sm:px-3">
-                  You pay Matston 1.2% per annum on invested equity and 20%
-                  performance fee if you make money with a Matston. Matston
-                  providers earn 15% and Matston 5% of the 20% performance fees.
+                  You pay BlockTech 1.2% per annum on invested equity and 20%
+                  performance fee if you make money with a BlockTech. BlockTech
+                  providers earn 15% and BlockTech 5% of the 20% performance fees.
                   The {"provider's"} only incentive is to make money
                   consistently.
                 </p>
@@ -51,7 +51,7 @@ const PortfolioManager: NextPage = () => {
               </div>
               <div className="max-w-full">
                 <h3 className="font-medium text-lg mb-3 text-[#202020]">
-                  Matston API
+                  BlockTech API
                 </h3>
                 <p className="font-light sm:px-3">
                   Find winning strategies leveraging {"traders'"} trading
@@ -87,10 +87,10 @@ const PortfolioManager: NextPage = () => {
               </div>
               <div className="max-w-full">
                 <h3 className="font-medium text-lg mb-3 text-[#202020]">
-                  We invest our own money in Matston
+                  We invest our own money in BlockTech
                 </h3>
                 <p className="font-light sm:px-3">
-                  We assign up to € 7.5M notional to 120 Matston every month. We
+                  We assign up to € 7.5M notional to 120 BlockTech every month. We
                   maintain the allocation during 6 consecutive months.
                 </p>
               </div>

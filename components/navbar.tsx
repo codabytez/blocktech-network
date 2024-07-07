@@ -147,7 +147,7 @@ const Navbar: NextPage = () => {
   );
 
   return (
-    <div>
+    <div className="relative">
       <div className="px-3 lg:px-24 lg:bg-[#e2e2e2] flex items-center gap-4 bg-white py-2 text-black">
         <NavLink href="/" className="contents lg:hidden">
           <Image src={logo} alt="BlockTech Logo" width={45} height={45} />
@@ -180,42 +180,55 @@ const Navbar: NextPage = () => {
             WebBlockTech
           </NavLink>
         </div>
-        <button
-          onClick={toggleMobileMenu}
-          className="lg:hidden flex items-center justify-center w-10 h-10"
-        >
-          {mobileMenuOpen ? (
-            <svg
-              className="w-6 h-6 relative z-[999]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              className="w-6 h-6 relative z-[999]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </button>
+        <div className="flex gap-2 justify-end items-center">
+          <svg role="img" width="1em" height="1em" viewBox="0 0 18 18">
+            <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+              <g
+                transform="translate(-1362.000000, -104.000000)"
+                fill="currentColor"
+              >
+                <path d="M1379.00496,121.06904 C1378.86456,121.20944 1378.68096,121.28 1378.49736,121.28 C1378.31376,121.28 1378.13088,121.20944 1377.99048,121.06904 L1372.48032,115.538 C1371.37584,116.42576 1369.9776,116.96 1368.45552,116.96 C1364.89584,116.96 1362,114.05336 1362,110.48072 C1362,106.90736 1364.89584,104 1368.45552,104 C1372.0152,104 1374.91104,106.90736 1374.91104,110.48072 C1374.91104,112.00784 1374.37896,113.41112 1373.4948,114.51992 L1379.00496,120.05096 C1379.28504,120.33248 1379.28504,120.78752 1379.00496,121.06904 Z M1368.45552,105.44 C1365.6864,105.44 1363.43424,107.70152 1363.43424,110.48072 C1363.43424,113.2592 1365.6864,115.52 1368.45552,115.52 C1371.22392,115.52 1373.4768,113.2592 1373.4768,110.48072 C1373.4768,107.70152 1371.22392,105.44 1368.45552,105.44 Z"></path>
+              </g>
+            </g>
+          </svg>
+
+          <button
+            onClick={toggleMobileMenu}
+            className="lg:hidden flex items-center justify-center w-10 h-10"
+          >
+            {mobileMenuOpen ? (
+              <svg
+                className="w-6 h-6 relative z-[999]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6 relative z-[999]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Desktop */}
@@ -306,9 +319,9 @@ const Navbar: NextPage = () => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white py-4 px-3">
-          <nav className="flex flex-col space-y-4">
-            <div>
+        <div className="lg:hidden bg-white py-4 px-3 h-screen fixed z-[999] w-full">
+          <nav className="flex flex-col mb-10">
+            <div className="border-b-2 py-4 px-2">
               <button
                 onClick={() => toggleMobileSection("solutions")}
                 className="flex justify-between items-center w-full text-black hover:underline"
@@ -355,7 +368,7 @@ const Navbar: NextPage = () => {
               )}
             </div>
 
-            <div>
+            <div className="border-b-2 py-4 px-2">
               <button
                 onClick={() => toggleMobileSection("trading")}
                 className="flex justify-between items-center w-full text-black hover:underline"
@@ -402,7 +415,7 @@ const Navbar: NextPage = () => {
               )}
             </div>
 
-            <div>
+            <div className="border-b-2 py-4 px-2">
               <button
                 onClick={() => toggleMobileSection("staking")}
                 className="flex justify-between items-center w-full text-black hover:underline"
@@ -444,22 +457,33 @@ const Navbar: NextPage = () => {
 
             <NavLink
               href={ROUTES.INSIGHTS}
-              className="text-black hover:underline"
+              className="text-black hover:underline border-b-2 py-4 px-2"
             >
               Insights
             </NavLink>
-            <NavLink href={ROUTES.ABOUT} className="text-black hover:underline">
+            <NavLink
+              href={ROUTES.ABOUT}
+              className="text-black hover:underline py-4 px-2"
+            >
               About Us
             </NavLink>
           </nav>
-          <form className="mt-4">
-            <input
-              type="search"
-              name="q"
-              placeholder="Search"
-              className="w-full border border-gray-300 rounded-md px-3 py-2"
-            />
-          </form>
+
+          <div className="w-full flex flex-col gap-5 ">
+            <NavLink
+              href={ROUTES.LOGIN}
+              className="bg-black p-2 text-center text-sm font-bold w-full text-white transition-all duration-300 hover:bg-primary"
+            >
+              LOGIN
+            </NavLink>
+
+            <NavLink
+              href={ROUTES.SIGNUP}
+              className="bg-black p-2 text-center text-sm font-bold w-full text-white transition-all duration-300 hover:bg-primary"
+            >
+              WEBBLOCKTECH
+            </NavLink>
+          </div>
         </div>
       )}
     </div>

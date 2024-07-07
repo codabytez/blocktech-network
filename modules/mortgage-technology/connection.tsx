@@ -30,10 +30,12 @@ const Connection: NextPage = () => {
                   backgroundColor: "rgba(0, 0, 0, 0.8)",
                 }}
               >
-                <div className="mb-4">
+                <div className="mb-4 text-center">
                   <Image src={logo} alt="logo" width={96} height={96} />
                 </div>
-                <h2 className="mb-4 text-5xl">Make the Connection</h2>
+                <h2 className="mb-4 text-3xl md:text-5xl">
+                  Make the Connection
+                </h2>
                 <p className="mb-8">
                   Mark your calendar for BlockTech Experience 2025, happening at
                   the Wynn Las Vegas from March 10-12, 2025. This premier

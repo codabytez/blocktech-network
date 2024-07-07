@@ -25,11 +25,11 @@ const AboutUs: NextPage = () => {
             Between innovation and scale. Between all parts of the ecosystem.
           </p>
           <h3 className="mb-8">
-            Explore the ICE Mortgage Technology suite of products
+            Explore the BlockTech Mortgage Technology suite of products
           </h3>
         </div>
         <ul className="flex gap-x-3 justify-between flex-wrap list-none">
-          <li className="w-[calc(12.5%-12px)]">
+          <li className="flex-1 lg:flex-auto lg:w-[calc(12.5%-12px)]">
             <button className="bg-none h-[172px] mb-8 w-full border border-[#E3F3FA] text-[#506690] cursor-pointer">
               <div className="bg-[#e3f3fa] border-[#e3f3fa] relative w-full h-full border-2 flex flex-col">
                 <div className="flex flex-col h-full items-center">
@@ -50,7 +50,7 @@ const AboutUs: NextPage = () => {
               </div>
             </button>
           </li>
-          <li className="w-[calc(12.5%-12px)]">
+          <li className="flex-1 lg:flex-auto lg:w-[calc(12.5%-12px)]">
             <button className="bg-none h-[172px] mb-8 w-full border border-transparent cursor-pointer">
               <div className="relative w-full h-full border-2 border-black flex flex-col">
                 <div className="flex flex-col h-full items-center">
@@ -71,7 +71,7 @@ const AboutUs: NextPage = () => {
               </div>
             </button>
           </li>
-          <li className="w-[calc(12.5%-12px)]">
+          <li className="flex-1 lg:flex-auto lg:w-[calc(12.5%-12px)]">
             <button className="bg-none h-[172px] mb-8 w-full border border-transparent cursor-pointer">
               <div className=" relative w-full h-full border-2 border-black flex flex-col">
                 <div className="flex flex-col h-full items-center">
@@ -87,7 +87,7 @@ const AboutUs: NextPage = () => {
               </div>
             </button>
           </li>
-          <li className="w-[calc(12.5%-12px)]">
+          <li className="flex-1 lg:flex-auto lg:w-[calc(12.5%-12px)]">
             <button className="bg-none h-[172px] mb-8 w-full border border-transparent cursor-pointer">
               <div className=" relative w-full h-full border-2 border-black flex flex-col">
                 <div className="flex flex-col h-full items-center">
@@ -108,7 +108,7 @@ const AboutUs: NextPage = () => {
               </div>
             </button>
           </li>
-          <li className="w-[calc(12.5%-12px)]">
+          <li className="flex-1 lg:flex-auto lg:w-[calc(12.5%-12px)]">
             <button className="bg-none h-[172px] mb-8 w-full border border-transparent cursor-pointer">
               <div className=" relative w-full h-full border-2 border-black flex flex-col">
                 <div className="flex flex-col h-full items-center">
@@ -124,7 +124,7 @@ const AboutUs: NextPage = () => {
               </div>
             </button>
           </li>
-          <li className="w-[calc(12.5%-12px)]">
+          <li className="flex-1 lg:flex-auto lg:w-[calc(12.5%-12px)]">
             <button className="bg-none h-[172px] mb-8 w-full border border-transparent cursor-pointer">
               <div className=" relative w-full h-full border-2 border-black flex flex-col">
                 <div className="flex flex-col h-full items-center">
@@ -140,7 +140,7 @@ const AboutUs: NextPage = () => {
               </div>
             </button>
           </li>
-          <li className="w-[calc(12.5%-12px)]">
+          <li className="flex-1 lg:flex-auto lg:w-[calc(12.5%-12px)]">
             <button className="bg-none h-[172px] mb-8 w-full border border-transparent cursor-pointer">
               <div className=" relative w-full h-full border-2 border-black flex flex-col">
                 <div className="flex flex-col h-full items-center">
@@ -156,7 +156,7 @@ const AboutUs: NextPage = () => {
               </div>
             </button>
           </li>
-          <li className="w-[calc(12.5%-12px)]">
+          <li className="flex-1 lg:flex-auto lg:w-[calc(12.5%-12px)]">
             <button className="bg-none h-[172px] mb-8 w-full border border-transparent cursor-pointer">
               <div className=" relative w-full h-full border-2 border-black flex flex-col">
                 <div className="flex flex-col h-full items-center">
@@ -181,8 +181,8 @@ const AboutUs: NextPage = () => {
         <div>
           <div>
             <div className="container max-w-[1320px] mx-auto w-full">
-              <div className="flex flex-wrap -mx-8 gap-16">
-                <div className="relative flex-[0_0_auto] w-[47%] px-8">
+              <div className="flex flex-col md:flex-row flex-wrap -mx-8 gap-5 lg:gap-16">
+                <div className="relative flex-[0_0_auto] md:w-[47%] px-8">
                   <div className="relative w-full h-full border-2 border-black flex flex-col text-left">
                     <div className="flex flex-col h-full items-center text-left">
                       <div className="relative h-full flex-[1_1_auto] p-8">
@@ -216,7 +216,7 @@ const AboutUs: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative w-[47%] flex-[0_0_auto] pr-8">
+                <div className="relative md:w-[47%] flex-[0_0_auto] pl-2 pr-8">
                   <div className="text-left">
                     <h4 className="mb-4 font-medium text-2xl">
                       Featured Real Estate products

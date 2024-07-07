@@ -9,7 +9,7 @@ const CTA: NextPage = () => {
         <div className="gap-16 flex flex-wrap -mx-8 justify-center">
           <div className="relative flex-[0_0_auto] w-full px-8">
             <div className="flex items-center flex-col">
-              <h1 className="font-medium mb-8 text-5xl">
+              <h1 className="font-medium mb-8 text-3xl md:text-5xl">
                 Ready for a true digital mortgage experience?
                 <br />
                 Get in touch with us.

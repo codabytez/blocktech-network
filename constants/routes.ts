@@ -14,6 +14,6 @@ export const ROUTES = {
   SIGNUP: "/signup",
   DEPOSIT_PROTECTION: "/deposit-protection",
   DEPOSIT_WITHDRAWAL: "/deposit-withdrawal",
-  CONTACT:"/contact",
-  SUSCRIBE:"/suscribe",
+  CONTACT: "/contact",
+  SUBSCRIBE: "/subscribe",
 };

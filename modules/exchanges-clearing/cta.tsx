@@ -22,7 +22,7 @@ const CTA: NextPage = () => {
                 <div className="mb-6"></div>
                 <div>
                   <Link
-                    href={ROUTES.SUSCRIBE}
+                    href={ROUTES.SUBSCRIBE}
                     className="font-medium justify-center items-center no-underline focus-within:outline-none focus:outline-none focus-within:ring focus:ring leading-tight align-middle duration-75 active:translate-y-px max-w-full select-none bg-black admin:bg-primary text-white border-white shadow-lg  hover:text-primary admin:hover:text-white    active:text-primary admin:hover:text-white  active:shadow-none  checked:text-primary   text-xs md:text-sm gap-1 md:gap-4 border rounded-tl rounded-tr rounded-bl rounded-br inline-flex px-6 md:px-12 py-1 md:py-2 cursor-pointer uppercase flex-row-reverse break-words"
                   >
                     <span>

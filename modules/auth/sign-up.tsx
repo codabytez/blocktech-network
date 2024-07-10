@@ -9,6 +9,7 @@ import block from "@/public/images/Block-White-64px.png";
 import positions from "@/public/images/Positions-White-64px.png";
 import ICEHub from "@/public/images/ETFHub-White-64px.png";
 import quoteBoard from "@/public/images/QuoteBoard-White-64px.png";
+import { ROUTES } from "@/constants/routes";
 
 const SignUp: NextPage = () => {
   return (
@@ -179,19 +180,82 @@ const SignUp: NextPage = () => {
                 <div className="-mx-5">
                   <div className="mb-1 md:w-full">
                     <label
+                      htmlFor="firstName"
+                      className="text-xs text-[#808080] font-bold"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
+                      type="text"
+                      name="firstName"
+                    />
+                  </div>
+                  <div className="mb-1 md:w-full">
+                    <label
+                      htmlFor="lastName"
+                      className="text-xs text-[#808080] font-bold"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
+                      type="text"
+                      name="lastName"
+                    />
+                  </div>
+                  <div className="mb-1 md:w-full">
+                    <label
+                      htmlFor="email"
+                      className="text-xs text-[#808080] font-bold"
+                    >
+                      Email Address
+                    </label>
+                    <input
+                      className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
+                      type="text"
+                      name="email"
+                    />
+                  </div>
+                  <div className="mb-1 md:w-full">
+                    <label
                       htmlFor="user"
                       className="text-xs text-[#808080] font-bold"
                     >
-                      User ID
+                      User Name
                     </label>
                     <input
                       className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
                       type="text"
                       name="user"
-                      value=""
                     />
                   </div>
-
+                  <div className="mb-1 md:w-full">
+                    <label
+                      htmlFor="country"
+                      className="text-xs text-[#808080] font-bold"
+                    >
+                      Country
+                    </label>
+                    <input
+                      className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
+                      type="text"
+                      name="country"
+                    />
+                  </div>
+                  <div className="mb-1 md:w-full">
+                    <label
+                      htmlFor="phone"
+                      className="text-xs text-[#808080] font-bold"
+                    >
+                      Phone Number
+                    </label>
+                    <input
+                      className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
+                      type="text"
+                      name="phone"
+                    />
+                  </div>
                   <div className="mb-1 md:w-full">
                     <label
                       htmlFor="password"
@@ -203,6 +267,20 @@ const SignUp: NextPage = () => {
                       className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
                       type="text"
                       name="password"
+                    />
+                  </div>
+
+                  <div className="mb-1 md:w-full">
+                    <label
+                      htmlFor="confirmPassword"
+                      className="text-xs text-[#808080] font-bold"
+                    >
+                      Confirm Password
+                    </label>
+                    <input
+                      className="text-[#565A5C] text-sm w-full h-7 py-1 px-2 shadow-[inset_0_1px_1px_rgba(0,_0,_0,_.075)] border border-[#a2a4a3]"
+                      type="text"
+                      name="confirmPassword"
                       value=""
                     />
                   </div>
@@ -211,31 +289,16 @@ const SignUp: NextPage = () => {
                 <div className="-mx-5 mb-2">
                   <div className="mb-1 md:w-full">
                     <label className="text-xs text-[#808080]">
-                      <input name="remember_me" type="checkbox" />
-                      Remember User ID
+                      <input name="agree_terms" type="checkbox" /> I agree with{" "}
+                      <Link href="#" className="text-[#8DC7E9]">
+                        Terms and Conditions
+                      </Link>
                     </label>
                   </div>
                 </div>
 
                 <div className="pb-3 w-full">
                   <div className="-mx-5 flex justify-between">
-                    <div className="w-1/3 px-4">
-                      <div>
-                        <div className="pb-0.5 leading-none">
-                          <Link href="#" className="text-xs text-[#8DC7E9]">
-                            Change Password
-                          </Link>
-                        </div>
-                        <div
-                          id="loginPageForgotPassword"
-                          className="pb-0.5 leading-none"
-                        >
-                          <Link href="#" className="text-xs text-[#8DC7E9]">
-                            Forgot/Reset Password
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
                     <div className="w-2/3 px-4 float-right">
                       <div className="-mx-5">
                         <div className="mb-1 w-full relative px-5">
@@ -259,8 +322,8 @@ const SignUp: NextPage = () => {
             <div>
               <br />
               <p className="text-xs mb-6">
-                To access BlockTech Data Services{" "}
-                <Link href="#" className="text-[#8DC7E9]">
+                Already have an account?{" "}
+                <Link href={ROUTES.LOGIN} className="text-[#8DC7E9]">
                   Click here
                 </Link>
               </p>

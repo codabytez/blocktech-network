@@ -38,7 +38,7 @@ const AboutHero: NextPage = () => {
                 </div>
                 <div className="">
                   <div>
-                    BlockTech was founded in 2024 to digitize the energy markets
+                    BlockTech was founded in 1994 to digitize the energy markets
                     and provide greater price transparency. We’ve been
                     transforming markets, products and processes ever since. By
                     combining our world class technology with our leading data

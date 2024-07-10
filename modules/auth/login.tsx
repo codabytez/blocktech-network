@@ -260,9 +260,8 @@ const Login: NextPage = () => {
             <div>
               <br />
               <p className="text-xs mb-6">
-                To access Blocktech Data Services{" "}
                 <Link href={ROUTES.SIGNUP} className="text-[#8DC7E9]">
-                  Click here
+                  Create account
                 </Link>
               </p>
             </div>

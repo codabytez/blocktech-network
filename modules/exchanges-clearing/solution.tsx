@@ -77,15 +77,15 @@ const Solution: NextPage = () => {
 
 const solutions = [
   {
-    title: "WebICE",
+    title: "WebBlockTech",
     description:
-      "Access the deep liquidity and transparency of the ICE futures markets with our multi-asset trading application. This secure, flexible technology supports a range of trading and risk management tools.",
+      "Access the deep liquidity and transparency of the BlockTech futures markets with our multi-asset trading application. This secure, flexible technology supports a range of trading and risk management tools.",
     buttonText: "LEARN MORE",
   },
   {
-    title: "ICE Connect",
+    title: "BlockTech Connect",
     description:
-      "Access to ICE proprietary data as well as prices from global exchanges, third-party news and advanced charting and analysis tools. Help manage price and currency risk across global markets and streamline your workflow to focus on your core business objectives.",
+      "Access to BlockTech proprietary data as well as prices from global exchanges, third-party news and advanced charting and analysis tools. Help manage price and currency risk across global markets and streamline your workflow to focus on your core business objectives.",
     buttonText: "LEARN MORE",
   },
   {

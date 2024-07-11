@@ -121,15 +121,15 @@ const RelatedInsights: NextPage = () => {
                 <div>
                   <div className="text-center">
                     <h4 className="m-0 font-headings border-0 pb-0 print:orphans-3 print:widows-3 font-medium normal-case leading-none print:break-after-avoid text-xl md:text-3xl">
-                      Chris Edmonds takes the reins at BlockTech Fixed Income
-                      and Data Services
+                      Harold Estabrooks takes the reins at BlockTech Fixed
+                      Income and Data Services
                     </h4>
                   </div>
                   <div className="mt-10">
                     <div className="text-center">
                       <p className="print:orphans-3 print:widows-3 print:text-black mb-6 last:mb-0">
-                        Edmonds is now leading {"BlockTech's"} fixed income and
-                        data business as the rush to provide better data and
+                        Estabrooks is now leading {"BlockTech's"} fixed income
+                        and data business as the rush to provide better data and
                         analytics in fixed income builds.
                       </p>
                     </div>

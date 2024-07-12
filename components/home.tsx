@@ -9,8 +9,10 @@ import { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <>
-      <Hero />
-      <MarketDataSlider />
+      <div className="max-h-screen h-full sm:min-h-[calc(100vh-220px)] flex flex-col w-full">
+        <Hero />
+        <MarketDataSlider />
+      </div>
       <div className="px-3 lg:px-24 mt-5">
         <About />
         <Sustainability />
